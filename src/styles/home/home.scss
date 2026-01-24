@@ -1,4 +1,3 @@
-// styles/home.scss
 @import "../color.scss";
 
 .home {
@@ -9,7 +8,6 @@
   overflow-x: hidden;
   position: relative;
 
-  // --- Background Gradient Mesh (The "Apple" Glow) ---
   &__bg-glow {
     position: fixed;
     top: -20%;
@@ -27,7 +25,6 @@
     animation: floatBg 15s ease-in-out infinite alternate;
   }
 
-  // --- Navigation ---
   &__nav {
     position: fixed;
     top: 0;
@@ -37,7 +34,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    // Heavy glass effect
     background: rgba(24, 24, 27, 0.6);
     backdrop-filter: blur(20px) saturate(180%);
     -webkit-backdrop-filter: blur(20px) saturate(180%);
@@ -66,21 +62,17 @@
     }
   }
 
-  // --- Main Layout ---
   &__main {
     padding-top: 80px;
-    max-width: 1000px; // Slightly wider for modern feel
+    max-width: 1000px;
     margin: 0 auto;
     padding-left: 24px;
     padding-right: 24px;
   }
 
-  // --- ANIMATION SYSTEM ---
-  // The section itself just handles visibility triggering
   &__reveal {
-    opacity: 1; // Container is visible, children are hidden
+    opacity: 1;
 
-    // Default state for stagger elements: Hidden & Moved down
     .home__stagger-el {
       opacity: 0;
       transform: translateY(30px) scale(0.98);
@@ -89,14 +81,12 @@
         transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
-    // When the section has the visible class, animate children
     &--visible {
       .home__stagger-el {
         opacity: 1;
         transform: translateY(0) scale(1);
       }
 
-      // Stagger delays (Cascading effect)
       .home__stagger-el:nth-child(1) {
         transition-delay: 0.1s;
       }
@@ -112,7 +102,6 @@
     }
   }
 
-  // --- Hero Section ---
   &__hero {
     min-height: 90vh;
     display: flex;
@@ -133,19 +122,17 @@
       max-width: 600px;
     }
 
-    // Stylish Profile Picture Wrapper
     &-avatar-container {
       flex: 0 0 auto;
       position: relative;
       width: 180px;
       height: 180px;
 
-      // The glowing ring behind
       &::before {
         content: "";
         position: absolute;
         inset: -5px;
-        border-radius: 40px; // Squircle
+        border-radius: 40px;
         background: linear-gradient(135deg, var(--primary), var(--secondary-4));
         opacity: 0.5;
         filter: blur(15px);
@@ -157,10 +144,10 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      border-radius: 40px; // iOS Squircle shape
+      border-radius: 40px;
       border: 1px solid rgba(255, 255, 255, 0.1);
       box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.6);
-      transform: rotate(-3deg); // Slight artistic tilt
+      transform: rotate(-3deg);
       transition: transform 0.5s ease;
 
       &:hover {
@@ -210,7 +197,6 @@
     }
   }
 
-  // --- Section General ---
   &__section {
     padding: 140px 0;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
@@ -222,7 +208,6 @@
       margin-bottom: 60px;
       color: var(--white);
 
-      // Add a subtle dot accent
       &::after {
         content: ".";
         color: var(--primary);
@@ -230,7 +215,6 @@
     }
   }
 
-  // --- "Bento" Grid for Projects ---
   &__grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -238,7 +222,6 @@
   }
 
   &__card {
-    // Glassmorphism feel
     background: linear-gradient(145deg, var(--secondary-1), var(--secondary-2));
     border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 24px;
@@ -249,8 +232,8 @@
     position: relative;
     overflow: hidden;
     transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+    cursor: pointer;
 
-    // Shine effect on hover
     &::after {
       content: "";
       position: absolute;
@@ -313,11 +296,10 @@
     }
   }
 
-  // --- Experience List ---
   &__list {
     display: flex;
     flex-direction: column;
-    gap: 0; // Removing gap, using padding for dividers
+    gap: 0;
   }
 
   &__list-item {
@@ -373,7 +355,6 @@
   }
 }
 
-// Subtle float animation for background
 @keyframes floatBg {
   0% {
     transform: translate(0, 0);

@@ -1,62 +1,9 @@
 "use client";
 
-import React, { useEffect } from "react";
+import { useEffect } from "react";
+import { projects, experiences, education } from "./data/homePageData";
 
-// --- Types ---
-interface Project {
-  title: string;
-  description: string;
-  link: string;
-}
-
-interface Experience {
-  company: string;
-  role: string;
-  period: string;
-  description: string;
-}
-
-// --- Data ---
-const projects: Project[] = [
-  {
-    title: "E-Commerce Dashboard",
-    description:
-      "A high-performance analytics dashboard built with Next.js and GraphQL. Visualizing sales data with Recharts.",
-    link: "#",
-  },
-  {
-    title: "AI Image Generator",
-    description:
-      "Full-stack application utilizing OpenAI API to generate images based on text prompts. Built with Node.js and React.",
-    link: "#",
-  },
-  {
-    title: "Portfolio v1",
-    description:
-      "My previous portfolio built with vanilla JavaScript and SCSS. A testament to how far I've come.",
-    link: "#",
-  },
-];
-
-const experiences: Experience[] = [
-  {
-    company: "Tech Solutions Inc.",
-    role: "Senior Frontend Engineer",
-    period: "2021 — Present",
-    description:
-      "Leading the frontend team in migrating a legacy monolithic architecture to a micro-frontend ecosystem using React and Webpack Module Federation.",
-  },
-  {
-    company: "Creative Agency",
-    role: "Web Developer",
-    period: "2019 — 2021",
-    description:
-      "Developed award-winning marketing websites for Fortune 500 clients. Specialized in GSAP animations and WebGL interactions.",
-  },
-];
-
-export default function Home() {
-  // --- Scroll Logic ---
+const Home = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -64,13 +11,12 @@ export default function Home() {
           if (entry.isIntersecting) {
             entry.target.classList.add("home__reveal--visible");
           } else {
-            // Optional: Remove this else block if you want animations to only happen once
             entry.target.classList.remove("home__reveal--visible");
           }
         });
       },
       {
-        threshold: 0.1, // Trigger slightly earlier
+        threshold: 0.1,
         rootMargin: "0px 0px -100px 0px",
       },
     );
@@ -83,7 +29,6 @@ export default function Home() {
 
   return (
     <div className="home">
-      {/* 0. Ambient Background Glow */}
       <div className="home__bg-glow" />
 
       {/* 1. Top Navigation */}
@@ -116,7 +61,6 @@ export default function Home() {
         {/* 2. Hero Section */}
         <section id="hero" className="home__hero home__reveal">
           <div className="home__hero-content">
-            {/* Added stagger-el classes for sequential animation */}
             <div className="home__stagger-el">
               <span className="home__hero-overline">Welcome</span>
             </div>
@@ -185,19 +129,18 @@ export default function Home() {
         <section className="home__section home__reveal">
           <h2 className="home__section-header home__stagger-el">Education</h2>
           <div className="home__list">
-            <div className="home__list-item home__stagger-el">
-              <div className="home__list-left">
-                <div className="home__list-role">Bachelor of Science</div>
-                <div className="home__list-company">Computer Science</div>
-                <div className="home__list-date">2015 — 2019</div>
+            {education.map((edu, index) => (
+              <div key={index} className="home__list-item home__stagger-el">
+                <div className="home__list-left">
+                  <div className="home__list-role">{edu.role}</div>
+                  <div className="home__list-company">{edu.company}</div>
+                  <div className="home__list-date">{edu.period}</div>
+                </div>
+                <div className="home__list-right">
+                  <p className="home__list-details">{edu.description}</p>
+                </div>
               </div>
-              <div className="home__list-right">
-                <p className="home__list-details">
-                  University of Technology. Graduated with Honors. Focus on
-                  Software Architecture and Algorithms.
-                </p>
-              </div>
-            </div>
+            ))}
           </div>
         </section>
 
@@ -225,4 +168,6 @@ export default function Home() {
       </main>
     </div>
   );
-}
+};
+
+export default Home;
