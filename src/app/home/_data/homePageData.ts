@@ -1,4 +1,4 @@
-import { Project, Experience } from "../../../types/home";
+import { Project, Experience, Education } from "../../../types/home";
 
 export const projects: Project[] = [
   {
@@ -34,28 +34,28 @@ export const experiences: Experience[] = [
     role: "Software Engineer",
     period: "Jul 2023 — Aug 2024",
     description:
-      "Led the revamp of legacy repositories, improving load times by 60%. [cite_start]Implemented reusable components using Vue.js and React while managing hot-fixes for production issues[cite: 22, 23, 24].",
+      "Led the revamp of legacy repositories, improving load times by 60%. Implemented reusable components using Vue.js and React while managing hot-fixes for production issues.",
   },
   {
     company: "Finexus Group",
     role: "Software Engineer Intern",
     period: "Nov 2022 — Jun 2023",
     description:
-      "Developed a Web Software Development Kit (SDK) for E-Wallets using React, TypeScript, and GraphQL. [cite_start]Focused on API implementation and simplifying project structure",
+      "Developed a Web Software Development Kit (SDK) for E-Wallets using React, TypeScript, and GraphQL. Focused on API implementation and simplifying project structure",
   },
 ];
 
-export const education: Experience[] = [
+export const education: Education[] = [
   {
-    company: "Universiti Malaya",
-    role: "Master of Software Engineering (Software Technology)",
+    university: "Universiti Malaya",
+    degree: "Master of Software Engineering (Software Technology)",
     period: "Oct 2025 — Jul 2027",
     description:
       "Focusing on clean architecture, operational stability, and consistent engineering standards. Coursework includes Architecting Software Systems and Framework-Based Software Design",
   },
   {
-    company: "Tunku Abdul Rahman University of Management & Technology",
-    role: "Bachelor of Computer Science (Software Engineering)",
+    university: "Tunku Abdul Rahman University of Management & Technology",
+    degree: "Bachelor of Computer Science (Software Engineering)",
     period: "Jun 2020 — Jun 2023",
     description: "Graduated with a CGPA of 3.60/4.00.",
   },

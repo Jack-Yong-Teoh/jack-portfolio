@@ -10,3 +10,10 @@ export interface Experience {
   period: string;
   description: string;
 }
+
+export interface Education {
+  university: string;
+  degree: string;
+  period: string;
+  description: string;
+}
