@@ -1,30 +1,41 @@
 {
-  "experience": {
-    "description_1": "Desarrollé y mantuve aplicaciones full-stack utilizando Next.js, TypeScript, FastAPI y PostgreSQL, contribuyendo a sistemas que incluyen pagos criptográficos, SMS, streaming y plataformas internas. Colaboré en flujos de trabajo ágiles mientras mejoraba la fiabilidad del sistema, los estándares de prueba y la eficiencia del SEO/localización.",
-    "description_2": "Dirigí la renovación de repositorios heredados, mejorando los tiempos de carga en un 60 %. Implementé componentes reutilizables utilizando Vue.js y React, al tiempo que gestionaba soluciones urgentes para problemas de producción.",
-    "period_1": "Agosto de 2024 — Actualidad",
-    "period_2": "Julio de 2023 — Agosto de 2024",
-    "role_1": "Ingeniero de software full stack",
-    "role_2": "Ingeniero de software"
-  },
-  "hero": {
-    "headline_1": "Construyendo mi futuro,",
-    "headline_2": "Un paso a la vez",
-    "introduction": "Hola, soy Teoh Jack Yong",
-    "subtitle": "Soy un Full-Stack Engineer centrado en la construcción de aplicaciones web escalables, fiables y bien estructuradas."
-  },
   "navigation": {
-    "contact": "Contacto",
-    "experience": "Experiencia",
     "home": "Inicio",
     "project": "Proyecto",
+    "experience": "Experiencia",
+    "contact": "Contacto",
     "resume": "Reanudar"
   },
+  "hero": {
+    "introduction": "Hola, soy Teoh Jack Yong",
+    "headline_1": "Construyendo mi futuro,",
+    "headline_2": "Un paso a la vez",
+    "subtitle": "Soy un Full-Stack Engineer centrado en la construcción de aplicaciones web escalables, fiables y bien estructuradas."
+  },
   "project": {
+    "related_project": "Proyecto Relacionado",
+    "view_project": "Ver Proyecto",
     "project_1_description": "Una herramienta de optimización del rendimiento diseñada para almacenar en caché las respuestas de los modelos de IA, lo que reduce significativamente la latencia de la API y los costes operativos de las consultas repetitivas.",
     "project_2_description": "Una plataforma integral de gestión de tareas creada con MongoDB, Express, React y Node.js. Cuenta con autenticación segura, gestión de estado y capacidades CRUD completas.",
-    "project_3_description": "Una aplicación inteligente para el seguimiento de la dieta que utiliza algoritmos de reconocimiento de imágenes para analizar fotos de alimentos y estimar automáticamente el contenido calórico y de macronutrientes.",
-    "related_project": "Proyecto Relacionado",
-    "view_project": "Ver Proyecto"
+    "project_3_description": "Una aplicación inteligente para el seguimiento de la dieta que utiliza algoritmos de reconocimiento de imágenes para analizar fotos de alimentos y estimar automáticamente el contenido calórico y de macronutrientes."
+  },
+  "experience": {
+    "role_1": "Ingeniero de software full stack",
+    "period_1": "Agosto de 2024 — Actualidad",
+    "description_1": "Desarrollé y mantuve aplicaciones full-stack utilizando Next.js, TypeScript, FastAPI y PostgreSQL, contribuyendo a sistemas que incluyen pagos criptográficos, SMS, streaming y plataformas internas. Colaboré en flujos de trabajo ágiles mientras mejoraba la fiabilidad del sistema, los estándares de prueba y la eficiencia del SEO/localización.",
+    "role_2": "Ingeniero de software",
+    "period_2": "Julio de 2023 — Agosto de 2024",
+    "description_2": "Dirigí la renovación de repositorios heredados, mejorando los tiempos de carga en un 60 %. Implementé componentes reutilizables utilizando Vue.js y React, al tiempo que gestionaba soluciones urgentes para problemas de producción.",
+    "role_3": "Pasante de Ingeniería de Software",
+    "period_3": "Nov 2022 — Jun 2023",
+    "description_3": "Desarrollo de un Kit de Desarrollo de Software Web (SDK) para billeteras electrónicas utilizando React, TypeScript y GraphQL. Centrado en la implementación de API y la simplificación de la estructura del proyecto."
+  },
+  "education": {
+    "degree_1": "Máster en Ingeniería de Software (Tecnología de Software)",
+    "period_1": "Oct 2025 — Jul 2027",
+    "description_1": "Enfocado en arquitectura limpia, estabilidad operativa y estándares de ingeniería consistentes. Los cursos incluyen Arquitectura de Sistemas de Software y Diseño de Software Basado en Frameworks.",
+    "degree_2": "Licenciatura en Ciencias de la Computación (Ingeniería de Software)",
+    "period_2": "Jun 2020 — Jun 2023",
+    "description_2": "Graduado con un CGPA de 3.60 / 4.00. Galardonado en la lista de honor del Presidente y del Decano. Cursos relevantes: Gestión de Proyectos de Software, Análisis y Diseño de Sistemas, Programación Web, Gestión de Bases de Datos."
   }
 }

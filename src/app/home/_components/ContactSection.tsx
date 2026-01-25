@@ -1,14 +1,15 @@
+import { useTranslate } from "@tolgee/react";
+
 const ContactSection = () => {
+  const { t } = useTranslate();
+
   return (
     <section id="contact" className="home__section home__reveal">
       <div className="home__stagger-el">
-        <h2 className="home__section-header">Let's Connect</h2>
+        <h2 className="home__section-header">{t("contact.title")}</h2>
       </div>
       <div className="home__stagger-el">
-        <p className="home__hero-subtitle bottom">
-          Feel free to reach out if you have a question, want to collaborate, or
-          just want to connect, my inbox is always open.
-        </p>
+        <p className="home__hero-subtitle bottom">{t("contact.subtitle")}</p>
       </div>
       <div className="home__stagger-el">
         <div className="home__contact-links">

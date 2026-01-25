@@ -38,27 +38,24 @@ export const experiences: Experience[] = [
   },
   {
     company: "Finexus Group",
-    role: "Software Engineer Intern",
-    period: "Nov 2022 — Jun 2023",
-    description:
-      "Developed a Web Software Development Kit (SDK) for E-Wallets using React, TypeScript, and GraphQL. Focused on API implementation and simplifying project structure",
+    role: "experience.role_3",
+    period: "experience.period_3",
+    description: "experience.description_3",
   },
 ];
 
 export const education: Education[] = [
   {
     university: "University of Malaya",
-    degree: "Master of Software Engineering (Software Technology)",
-    period: "Oct 2025 — Jul 2027",
-    description:
-      "Focusing on clean architecture, operational stability, and consistent engineering standards. Coursework includes Architecting Software Systems and Framework-Based Software Design",
+    degree: "education.degree_1",
+    period: "education.period_1",
+    description: "education.description_1",
   },
   {
     university: "Tunku Abdul Rahman University of Management & Technology",
-    degree: "Bachelor of Computer Science (Software Engineering)",
-    period: "Jun 2020 — Jun 2023",
-    description:
-      "Graduated with a CGPA of 3.60 / 4.00. President's List & Dean's List honoree. Relevant coursework: Software Project Management, Systems Analysis and Design, Web Programming, Database Management",
+    degree: "education.degree_2",
+    period: "education.period_2",
+    description: "education.description_2",
   },
 ];
 

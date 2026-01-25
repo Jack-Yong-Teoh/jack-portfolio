@@ -1,30 +1,41 @@
 {
-  "experience": {
-    "description_1": "Developed and maintained full-stack applications using Next.js, TypeScript, FastAPI, and PostgreSQL, contributing to systems including crypto payments, SMS, streaming, and internal platforms. Collaborated in Agile workflows while improving system reliability, testing standards, and SEO/localization efficiency.",
-    "description_2": "Led the revamp of legacy repositories, improving load times by 60%. Implemented reusable components using Vue.js and React while managing hot-fixes for production issues.",
-    "period_1": "Aug 2024 — Present",
-    "period_2": "Jul 2023 — Aug 2024",
-    "role_1": "Fullstack Software Engineer",
-    "role_2": "Software Engineer"
-  },
-  "hero": {
-    "headline_1": "Building my future,",
-    "headline_2": "one step at a time",
-    "introduction": "Hi, I am Teoh Jack Yong",
-    "subtitle": "I'm a Full-Stack Engineer focused on building scalable, reliable, and well-structured web applications."
-  },
   "navigation": {
-    "contact": "Contact",
-    "experience": "Experience",
     "home": "Home",
-    "project": "Project",
+    "project": "Work",
+    "experience": "Experience",
+    "contact": "Contact",
     "resume": "Resume"
   },
+  "hero": {
+    "introduction": "Hi, I am Teoh Jack Yong",
+    "headline_1": "Building my future,",
+    "headline_2": "one step at a time",
+    "subtitle": "I'm a Full-Stack Engineer focused on building scalable, reliable, and well-structured web applications."
+  },
   "project": {
+    "related_project": "Related Project",
+    "view_project": "View Project",
     "project_1_description": "A performance optimization tool designed to cache AI model responses, significantly reducing API latency and operational costs for repetitive queries.",
     "project_2_description": "A comprehensive task management platform built with MongoDB, Express, React, and Node.js. Features secure authentication, state management, and full CRUD capabilities.",
-    "project_3_description": "An intelligent diet tracking application utilizing image recognition algorithms to analyze food photos and automatically estimate calorie and macronutrient content.",
-    "related_project": "Related Project",
-    "view_project": "View Project"
+    "project_3_description": "An intelligent diet tracking application utilizing image recognition algorithms to analyze food photos and automatically estimate calorie and macronutrient content."
+  },
+  "experience": {
+    "role_1": "Fullstack Software Engineer",
+    "period_1": "Aug 2024 — Present",
+    "description_1": "Developed and maintained full-stack applications using Next.js, TypeScript, FastAPI, and PostgreSQL, contributing to systems including crypto payments, SMS, streaming, and internal platforms. Collaborated in Agile workflows while improving system reliability, testing standards, and SEO/localization efficiency.",
+    "role_2": "Software Engineer",
+    "period_2": "Jul 2023 — Aug 2024",
+    "description_2": "Led the revamp of legacy repositories, improving load times by 60%. Implemented reusable components using Vue.js and React while managing hot-fixes for production issues.",
+    "role_3": "Software Engineer Intern",
+    "period_3": "Nov 2022 — Jun 2023",
+    "description_3": "Developed a Web Software Development Kit (SDK) for E-Wallets using React, TypeScript, and GraphQL. Focused on API implementation and simplifying project structure"
+  },
+  "education": {
+    "degree_1": "Master of Software Engineering (Software Technology)",
+    "period_1": "Oct 2025 — Jul 2027",
+    "description_1": "Focusing on clean architecture, operational stability, and consistent engineering standards. Coursework includes Architecting Software Systems and Framework-Based Software Design",
+    "degree_2": "Bachelor of Computer Science (Software Engineering)",
+    "period_2": "Jun 2020 — Jun 2023",
+    "description_2": "Graduated with a CGPA of 3.60 / 4.00. President's List & Dean's List honoree. Relevant coursework: Software Project Management, Systems Analysis and Design, Web Programming, Database Management"
   }
 }
