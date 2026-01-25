@@ -9,7 +9,7 @@ const LANGUAGE_COOKIE = "NEXT_LOCALE";
 export async function setLanguage(locale: string) {
   const cookieStore = await cookies();
   cookieStore.set(LANGUAGE_COOKIE, locale, {
-    maxAge: 1000 * 60 * 60 * 24 * 365, // one year in milisecods
+    maxAge: 1000 * 60 * 60 * 24 * 365,
   });
 }
 
@@ -20,7 +20,6 @@ export async function getLanguage() {
     return locale;
   }
 
-  // try to detect language from headers or use default
   const detected = detectLanguageFromHeaders(await headers(), ALL_LANGUAGES);
   return detected || DEFAULT_LANGUAGE;
 }

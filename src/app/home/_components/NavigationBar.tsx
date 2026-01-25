@@ -2,9 +2,8 @@
 
 import { useState, useEffect } from "react";
 import IMAGES from "@/assets";
-import { useTolgee } from "@tolgee/react";
-import { setLanguage } from "@/tolgee/language";
-import { useTranslate } from "@tolgee/react";
+import { useTolgee, useTranslate } from "@tolgee/react";
+import { usePathname, useSearchParams } from "next/navigation";
 
 const languages = [
   { code: "en", name: "English", flag: IMAGES.english_icon },
@@ -18,6 +17,8 @@ const NavigationBar = () => {
   const tolgee = useTolgee(["language"]);
   const activeLang = tolgee.getLanguage();
   const { t } = useTranslate();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
 
   const [currentLang, setCurrentLang] = useState(
     languages.find((l) => l.code === activeLang) || languages[0],
@@ -25,13 +26,6 @@ const NavigationBar = () => {
 
   const [isLangOpen, setIsLangOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  useEffect(() => {
-    const found = languages.find((l) => l.code === activeLang);
-    if (found) {
-      setCurrentLang(found);
-    }
-  }, [activeLang]);
 
   const toggleLangDropdown = () => setIsLangOpen(!isLangOpen);
   const toggleMobileMenu = () => {
@@ -43,11 +37,27 @@ const NavigationBar = () => {
     }
   };
 
-  const selectLanguage = async (lang: (typeof languages)[0]) => {
+  const selectLanguage = (lang: (typeof languages)[0]) => {
     setCurrentLang(lang);
     setIsLangOpen(false);
-    await setLanguage(lang.code);
-    tolgee.changeLanguage(lang.code);
+
+    const segments = pathname.split("/").filter(Boolean);
+    const langCode = lang.code;
+
+    if (segments.length > 0) {
+      segments[segments.length - 1] = langCode;
+    } else {
+      segments.push(langCode);
+    }
+
+    let newPath = "/" + segments.join("/");
+
+    const query = searchParams.toString();
+    if (query) {
+      newPath += `?${query}`;
+    }
+
+    window.location.href = newPath;
   };
 
   const closeMobileMenu = () => {

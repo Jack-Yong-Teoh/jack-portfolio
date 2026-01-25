@@ -29,6 +29,7 @@ export const TolgeeNextProvider = ({
       router.refresh();
     });
     return () => unsubscribe();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [tolgee, router]);
 
   return (
