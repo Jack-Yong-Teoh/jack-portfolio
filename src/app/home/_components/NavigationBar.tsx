@@ -116,16 +116,16 @@ const NavigationBar = () => {
           >
             Resume
           </a>
-        </div>
 
-        <button
-          className={`home__mobile-toggle ${isMobileMenuOpen ? "active" : ""}`}
-          onClick={toggleMobileMenu}
-          aria-label="Toggle Menu"
-        >
-          <span></span>
-          <span></span>
-        </button>
+          <button
+            className={`home__mobile-toggle ${isMobileMenuOpen ? "active" : ""}`}
+            onClick={toggleMobileMenu}
+            aria-label="Toggle Menu"
+          >
+            <span></span>
+            <span></span>
+          </button>
+        </div>
       </div>
 
       <div className={`home__mobile-menu ${isMobileMenuOpen ? "open" : ""}`}>
@@ -153,25 +153,6 @@ const NavigationBar = () => {
         </ul>
 
         <div className="home__mobile-actions">
-          {/* Mobile Language Selector (Simplified) */}
-          <div className="home__mobile-lang">
-            {languages.map((lang) => (
-              <button
-                key={lang.code}
-                className={`home__mobile-lang-btn ${currentLang.code === lang.code ? "active" : ""}`}
-                onClick={() => {
-                  selectLanguage(lang);
-                }}
-              >
-                <img
-                  className="home__lang-flag"
-                  src={lang.flag}
-                  alt={`${lang.name} flag`}
-                />
-              </button>
-            ))}
-          </div>
-
           <a
             href="/resume.pdf"
             target="_blank"

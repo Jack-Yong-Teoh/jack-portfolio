@@ -64,7 +64,8 @@
       gap: 16px;
 
       @media (max-width: 768px) {
-        display: none;
+        display: flex;
+        gap: 12px;
       }
     }
 
@@ -146,6 +147,12 @@
     }
   }
 
+  &__lang-code {
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
   &__lang-arrow {
     font-size: 10px;
     margin-left: 2px;
@@ -153,6 +160,10 @@
 
     &.open {
       transform: rotate(180deg);
+    }
+
+    @media (max-width: 768px) {
+      display: none;
     }
   }
 
@@ -207,6 +218,10 @@
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
+
+    @media (max-width: 768px) {
+      display: none;
+    }
 
     &:hover {
       background: var(--white);
