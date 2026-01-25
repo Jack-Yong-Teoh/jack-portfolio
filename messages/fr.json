@@ -1,41 +1,49 @@
 {
-  "navigation": {
-    "home": "Accueil",
-    "project": "Projet",
-    "experience": "Expérience",
-    "contact": "Contact",
-    "resume": "Résumé"
-  },
-  "hero": {
-    "introduction": "Bonjour, je suis Teoh Jack Yong",
-    "headline_1": "Construire mon avenir,",
-    "headline_2": "une étape à la fois",
-    "subtitle": "Je suis un ingénieur Full-Stack qui se concentre sur la construction d'applications web évolutives, fiables et bien structurées."
-  },
-  "project": {
-    "related_project": "Projet connexe",
-    "view_project": "Voir le projet",
-    "project_1_description": "Un outil d'optimisation des performances conçu pour mettre en cache les réponses des modèles d'IA, réduisant ainsi de manière significative la latence des API et les coûts opérationnels liés aux requêtes répétitives.",
-    "project_2_description": "Une plateforme complète de gestion des tâches développée avec MongoDB, Express, React et Node.js. Elle offre une authentification sécurisée, une gestion des états et des fonctionnalités CRUD complètes.",
-    "project_3_description": "Une application intelligente de suivi alimentaire qui utilise des algorithmes de reconnaissance d'images pour analyser les photos d'aliments et estimer automatiquement leur teneur en calories et en macronutriments."
-  },
-  "experience": {
-    "role_1": "Ingénieur logiciel full-stack",
-    "period_1": "Août 2024 — Aujourd'hui",
-    "description_1": "Développement et maintenance d'applications full-stack à l'aide de Next.js, TypeScript, FastAPI et PostgreSQL, contribuant à des systèmes tels que les paiements cryptographiques, les SMS, le streaming et les plateformes internes. Collaboration dans le cadre de workflows Agile tout en améliorant la fiabilité des systèmes, les normes de test et l'efficacité du référencement/de la localisation.",
-    "role_2": "Ingénieur logiciel",
-    "period_2": "Juillet 2023 — août 2024",
-    "description_2": "A dirigé la refonte des référentiels existants, améliorant les temps de chargement de 60 %. A mis en œuvre des composants réutilisables à l'aide de Vue.js et React tout en gérant les correctifs urgents pour les problèmes de production.",
-    "role_3": "Stagiaire Ingénieur Logiciel",
-    "period_3": "Nov 2022 — Juin 2023",
-    "description_3": "Développement d'un kit de développement logiciel Web (SDK) pour les portefeuilles électroniques utilisant React, TypeScript et GraphQL. Concentré sur l'implémentation d'API et la simplification de la structure du projet."
+  "contact": {
+    "subtitle": "N'hésitez pas à me contacter si vous avez une question, souhaitez collaborer ou simplement entrer en contact, ma boîte mail est toujours ouverte.",
+    "title": "Restons en contact"
   },
   "education": {
     "degree_1": "Master en Génie Logiciel (Technologie Logicielle)",
-    "period_1": "Oct 2025 — Juil 2027",
-    "description_1": "Se concentrant sur l'architecture propre, la stabilité opérationnelle et des normes d'ingénierie cohérentes. Les cours comprennent l'architecture des systèmes logiciels et la conception de logiciels basée sur des frameworks.",
     "degree_2": "Licence en Informatique (Génie Logiciel)",
-    "period_2": "Juin 2020 — Juin 2023",
-    "description_2": "Diplômé avec une moyenne cumulative de 3.60 / 4.00. Honoré sur la liste du président et du doyen. Cours pertinents : Gestion de projet logiciel, Analyse et conception de systèmes, Programmation Web, Gestion de base de données."
+    "description_1": "Se concentrant sur l'architecture propre, la stabilité opérationnelle et des normes d'ingénierie cohérentes. Les cours comprennent l'architecture des systèmes logiciels et la conception de logiciels basée sur des frameworks.",
+    "description_2": "Diplômé avec une moyenne cumulative de 3.60 / 4.00. Honoré sur la liste du président et du doyen. Cours pertinents : Gestion de projet logiciel, Analyse et conception de systèmes, Programmation Web, Gestion de base de données.",
+    "period_1": "Oct 2025 — Juil 2027",
+    "period_2": "Juin 2020 — Juin 2023"
+  },
+  "experience": {
+    "description_1": "Développement et maintenance d'applications full-stack à l'aide de Next.js, TypeScript, FastAPI et PostgreSQL, contribuant à des systèmes tels que les paiements cryptographiques, les SMS, le streaming et les plateformes internes. Collaboration dans le cadre de workflows Agile tout en améliorant la fiabilité des systèmes, les normes de test et l'efficacité du référencement/de la localisation.",
+    "description_2": "A dirigé la refonte des référentiels existants, améliorant les temps de chargement de 60 %. A mis en œuvre des composants réutilisables à l'aide de Vue.js et React tout en gérant les correctifs urgents pour les problèmes de production.",
+    "description_3": "Développement d'un kit de développement logiciel Web (SDK) pour les portefeuilles électroniques utilisant React, TypeScript et GraphQL. Concentré sur l'implémentation d'API et la simplification de la structure du projet.",
+    "period_1": "Août 2024 — Aujourd'hui",
+    "period_2": "Juillet 2023 — août 2024",
+    "period_3": "Nov 2022 — Juin 2023",
+    "role_1": "Ingénieur logiciel full-stack",
+    "role_2": "Ingénieur logiciel",
+    "role_3": "Stagiaire Ingénieur Logiciel"
+  },
+  "footer": {
+    "rights_reserved": "Tous droits réservés."
+  },
+  "hero": {
+    "headline_1": "Construire mon avenir,",
+    "headline_2": "une étape à la fois",
+    "introduction": "Bonjour, je suis Teoh Jack Yong",
+    "subtitle": "Je suis un ingénieur Full-Stack qui se concentre sur la construction d'applications web évolutives, fiables et bien structurées."
+  },
+  "navigation": {
+    "contact": "Contact",
+    "education": "Éducation",
+    "experience": "Expérience",
+    "home": "Accueil",
+    "project": "Projet",
+    "resume": "Résumé"
+  },
+  "project": {
+    "project_1_description": "Un outil d'optimisation des performances conçu pour mettre en cache les réponses des modèles d'IA, réduisant ainsi de manière significative la latence des API et les coûts opérationnels liés aux requêtes répétitives.",
+    "project_2_description": "Une plateforme complète de gestion des tâches développée avec MongoDB, Express, React et Node.js. Elle offre une authentification sécurisée, une gestion des états et des fonctionnalités CRUD complètes.",
+    "project_3_description": "Une application intelligente de suivi alimentaire qui utilise des algorithmes de reconnaissance d'images pour analyser les photos d'aliments et estimer automatiquement leur teneur en calories et en macronutriments.",
+    "related_project": "Projet connexe",
+    "view_project": "Voir le projet"
   }
 }
