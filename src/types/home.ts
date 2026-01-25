@@ -17,3 +17,8 @@ export interface Education {
   period: string;
   description: string;
 }
+
+export interface TechStackItem {
+  name: string;
+  icon: string;
+}
