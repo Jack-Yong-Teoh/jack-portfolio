@@ -17,15 +17,15 @@ const HeroSection = () => {
           </div>
           <div className="home__stagger-el">
             <h1 className="home__hero-title">
-              Designing the future,
+              Building my future,
               <br />
               one step at a time
             </h1>
           </div>
           <div className="home__stagger-el">
             <p className="home__hero-subtitle">
-              I'm a Full Stack Developer passionate about building accessible,
-              pixel-perfect, and performant web experiences.
+              I'm a Full-Stack Engineer focused on building scalable, reliable,
+              and well-structured web applications.
             </p>
           </div>
         </div>

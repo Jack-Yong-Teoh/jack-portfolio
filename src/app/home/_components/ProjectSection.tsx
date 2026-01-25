@@ -11,7 +11,7 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ projects }) => {
 
   return (
     <section id="projects" className="home__section home__reveal">
-      <h2 className="home__section-header home__stagger-el">Selected Work</h2>
+      <h2 className="home__section-header home__stagger-el">Related Work</h2>
 
       <div className="home__grid">
         {projects.map((project, index) => (

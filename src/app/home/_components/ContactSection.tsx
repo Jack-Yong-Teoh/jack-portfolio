@@ -13,7 +13,7 @@ const ContactSection = () => {
       <div className="home__stagger-el">
         <div className="home__contact-links">
           <a
-            href="mailto:your.email@example.com"
+            href="mailto:yongjack010413@gmail.com"
             className="home__social-btn"
             title="Email"
           >
@@ -36,7 +36,7 @@ const ContactSection = () => {
           </a>
 
           <a
-            href="https://linkedin.com/in/your-profile"
+            href="https://www.linkedin.com/in/jack-yong-teoh-6334bb243/"
             className="home__social-btn"
             title="LinkedIn"
             target="_blank"
@@ -56,7 +56,7 @@ const ContactSection = () => {
           </a>
 
           <a
-            href="https://github.com/your-profile"
+            href="https://github.com/Jack-Yong-Teoh"
             className="home__social-btn"
             title="GitHub"
             target="_blank"
@@ -76,7 +76,7 @@ const ContactSection = () => {
           </a>
 
           <a
-            href="https://twitter.com/your-profile"
+            href="https://twitter.com/jackyongteoh"
             className="home__social-btn"
             title="X (Twitter)"
             target="_blank"
@@ -96,7 +96,7 @@ const ContactSection = () => {
           </a>
 
           <a
-            href="https://instagram.com/your-profile"
+            href="https://www.instagram.com/jackyongt_/"
             className="home__social-btn"
             title="Instagram"
             target="_blank"
