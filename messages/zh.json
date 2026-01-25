@@ -1,0 +1,49 @@
+{
+  "contact": {
+    "subtitle": "如有任何疑问、合作意向或单纯希望交流，欢迎随时来信，我的邮箱随时为您敞开。",
+    "title": "让我们建立联系"
+  },
+  "education": {
+    "degree_1": "软件工程硕士 (软件技术)",
+    "degree_2": "计算机科学学士 (软件工程)",
+    "description_1": "专注于简洁架构、运营稳定性和一致的工程标准。课程包括软件系统架构和基于框架的软件设计。",
+    "description_2": "毕业 CGPA 3.60 / 4.00。荣获校长名单和院长名单荣誉。相关课程：软件项目管理、系统分析与设计、Web 编程、数据库管理。",
+    "period_1": "2025年10月 — 2027年7月",
+    "period_2": "2020年6月 — 2023年6月"
+  },
+  "experience": {
+    "description_1": "使用Next.js、TypeScript、FastAPI和PostgreSQL开发并维护全栈应用程序，参与构建加密支付、短信服务、流媒体及内部平台等系统。在敏捷工作流程中协同合作，同时提升系统可靠性、测试标准以及SEO/本地化效率。",
+    "description_2": "主导了传统仓库的改造工作，将加载时间缩短了60%。在实施Vue.js和React可复用组件的同时，负责管理生产环境问题的紧急修复。",
+    "description_3": "使用 React、TypeScript 和 GraphQL 为电子钱包开发 Web 软件开发工具包 (SDK)。专注于 API 实现和简化项目结构。",
+    "period_1": "2024年8月 — 至今",
+    "period_2": "2023年7月 — 2024年8月",
+    "period_3": "2022年11月 — 2023年6月",
+    "role_1": "全栈软件工程师",
+    "role_2": "软件工程师",
+    "role_3": "软件工程师实习生"
+  },
+  "footer": {
+    "rights_reserved": "版权所有。"
+  },
+  "hero": {
+    "headline_1": "打造自己的未来,",
+    "headline_2": "一步一步地来",
+    "introduction": "你好，我是张杰咏",
+    "subtitle": "我是一名全栈工程师，专注于构建可扩展、可靠和结构良好的网络应用程序。"
+  },
+  "navigation": {
+    "contact": "联系",
+    "education": "教育 ",
+    "experience": "经验",
+    "home": "首页",
+    "project": "项目",
+    "resume": "简历"
+  },
+  "project": {
+    "project_1_description": "这是一款性能优化工具，旨在缓存人工智能模型的响应，大幅减少重复查询的 API 延迟和运营成本。",
+    "project_2_description": "基于MongoDB、Express、React和Node.js构建的综合任务管理平台。具备安全认证、状态管理及完整的CRUD功能。",
+    "project_3_description": "一款智能饮食追踪应用，通过图像识别算法分析食物照片，自动估算卡路里和主要营养成分含量。",
+    "related_project": "相关项目",
+    "view_project": "查看项目"
+  }
+}

@@ -628,6 +628,25 @@
   dependencies:
     tslib "^2.8.0"
 
+"@tolgee/core@6.2.7":
+  version "6.2.7"
+  resolved "https://registry.yarnpkg.com/@tolgee/core/-/core-6.2.7.tgz#05c23534153de5fbf05e44d148b852d7d85423c9"
+  integrity sha512-0Au+m9R23/gmeaLJY0X6lKcR2LSy9dW7hEFrpFvPdJoGvxc8XCNZpKlgnm1N534CwmtIBJ4rzOK6vOrSKbl45w==
+
+"@tolgee/react@^6.2.7":
+  version "6.2.7"
+  resolved "https://registry.yarnpkg.com/@tolgee/react/-/react-6.2.7.tgz#5ada9c9ffcb23fa79b2431291e3037eb28c0aef8"
+  integrity sha512-acZ2bThetoFp/VIWxStrza4RtXX+M7Bfy/f3uMBu2h+fXj3u+BxTR/3YAX67umbhF5RNoOTBPt74EOD+bDtcpQ==
+  dependencies:
+    "@tolgee/web" "6.2.7"
+
+"@tolgee/web@6.2.7":
+  version "6.2.7"
+  resolved "https://registry.yarnpkg.com/@tolgee/web/-/web-6.2.7.tgz#d99875801a350b8724df89dc42b36cae32d2a04a"
+  integrity sha512-MAgHGkL5RYREwAjUansJt98fCuQFV4uDfP11NLOCHan2Hx9rpuszv88eXX7enq9CE8eS/Ed2pELiSwb5rlYiKg==
+  dependencies:
+    "@tolgee/core" "6.2.7"
+
 "@tybys/wasm-util@^0.10.0":
   version "0.10.1"
   resolved "https://registry.yarnpkg.com/@tybys/wasm-util/-/wasm-util-0.10.1.tgz#ecddd3205cf1e2d5274649ff0eedd2991ed7f414"

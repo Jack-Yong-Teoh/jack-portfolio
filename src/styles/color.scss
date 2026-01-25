@@ -1,5 +1,3 @@
-// styles/_colors.scss
-
 :root {
   --primary: #34bcf6;
   --secondary: #18181b;
@@ -12,7 +10,6 @@
   --gray: #9e9e9e;
   --orange: #ff7700;
 
-  // Apple-like transition defaults
   --transition-ease: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
   --glass-bg: rgba(24, 24, 27, 0.7);
 }
