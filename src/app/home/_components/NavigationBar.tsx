@@ -1,13 +1,14 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import { useState } from "react";
+import IMAGES from "@/assets";
 
 const languages = [
-  { code: "en", name: "English", flag: "🇺🇸" },
-  { code: "zh", name: "Chinese", flag: "🇨🇳" },
-  { code: "fr", name: "French", flag: "🇫🇷" },
-  { code: "jp", name: "Japanese", flag: "🇯🇵" },
-  { code: "es", name: "Spanish", flag: "🇪🇸" },
+  { code: "en", name: "English", flag: IMAGES.english_icon },
+  { code: "zh", name: "中文", flag: IMAGES.china_icon },
+  { code: "fr", name: "Français", flag: IMAGES.france_icon },
+  { code: "jp", name: "日本語", flag: IMAGES.japan_icon },
+  { code: "es", name: "Español", flag: IMAGES.spain_icon },
 ];
 
 const NavigationBar = () => {
@@ -40,11 +41,10 @@ const NavigationBar = () => {
       <div className="home__nav-container">
         <div className="home__nav-left">
           <div className="home__logo">
-            <span className="home__logo-text">JD</span>
+            <img className="home__logo-item" src={IMAGES.logo} alt="Logo" />
           </div>
         </div>
 
-        {/* Desktop Navigation */}
         <ul className="home__nav-list">
           <li>
             <a href="#hero" className="home__nav-link">
@@ -76,7 +76,11 @@ const NavigationBar = () => {
               onClick={toggleLangDropdown}
               aria-label="Select Language"
             >
-              <span className="home__lang-flag">{currentLang.flag}</span>
+              <img
+                className="home__lang-flag"
+                src={currentLang.flag}
+                alt={`${currentLang.name} flag`}
+              />
               <span className="home__lang-code">{currentLang.name}</span>
               <span className={`home__lang-arrow ${isLangOpen ? "open" : ""}`}>
                 ▼
@@ -91,7 +95,11 @@ const NavigationBar = () => {
                       className="home__lang-option"
                       onClick={() => selectLanguage(lang)}
                     >
-                      <span className="home__lang-flag">{lang.flag}</span>
+                      <img
+                        className="home__lang-flag"
+                        src={lang.flag}
+                        alt={`${lang.name} flag`}
+                      />
                       <span className="home__lang-name">{lang.name}</span>
                     </button>
                   </li>
@@ -110,7 +118,6 @@ const NavigationBar = () => {
           </a>
         </div>
 
-        {/* Mobile Toggle Button */}
         <button
           className={`home__mobile-toggle ${isMobileMenuOpen ? "active" : ""}`}
           onClick={toggleMobileMenu}
@@ -121,7 +128,6 @@ const NavigationBar = () => {
         </button>
       </div>
 
-      {/* Mobile Menu Overlay */}
       <div className={`home__mobile-menu ${isMobileMenuOpen ? "open" : ""}`}>
         <ul className="home__mobile-links">
           <li>
@@ -157,7 +163,11 @@ const NavigationBar = () => {
                   selectLanguage(lang);
                 }}
               >
-                <span style={{ fontSize: "20px" }}>{lang.flag}</span>
+                <img
+                  className="home__lang-flag"
+                  src={lang.flag}
+                  alt={`${lang.name} flag`}
+                />
               </button>
             ))}
           </div>
