@@ -3,13 +3,13 @@ const HeroSection = () => {
     <section id="hero" className="home__hero home__reveal">
       <div className="home__hero-content">
         <div className="home__stagger-el">
-          <span className="home__hero-overline">Welcome</span>
+          <span className="home__hero-overline">Hi, I am Teoh Jack Yong</span>
         </div>
         <div className="home__stagger-el">
           <h1 className="home__hero-title">
             Designing the future,
             <br />
-            one pixel at a time.
+            one step at a time
           </h1>
         </div>
         <div className="home__stagger-el">
