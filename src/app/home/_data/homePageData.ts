@@ -32,7 +32,7 @@ export const experiences: Experience[] = [
     role: "Fullstack Software Engineer",
     period: "Aug 2024 — Present",
     description:
-      "Developing web apps with Next.js (Frontend) and FastAPI (Backend). Optimized reliability by resolving 95% of critical bugs within 24 hours and reducing downtime by 20% via automated monitoring.",
+      "Developed and maintained full-stack applications using Next.js, TypeScript, FastAPI, and PostgreSQL, contributing to systems including crypto payments, SMS, streaming, and internal platforms. Collaborated in Agile workflows while improving system reliability, testing standards, and SEO/localization efficiency.",
   },
   {
     company: "ARB Berhad",
@@ -62,7 +62,8 @@ export const education: Education[] = [
     university: "Tunku Abdul Rahman University of Management & Technology",
     degree: "Bachelor of Computer Science (Software Engineering)",
     period: "Jun 2020 — Jun 2023",
-    description: "Graduated with a CGPA of 3.60/4.00.",
+    description:
+      "Graduated with a CGPA of 3.60 / 4.00. President's List & Dean's List honoree. Relevant coursework: Software Project Management, Systems Analysis and Design, Web Programming, Database Management",
   },
 ];
 
@@ -76,16 +77,16 @@ export const techStack: TechStackItem[] = [
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
   },
   {
+    name: "TypeScript",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+  },
+  {
     name: "Python",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
   },
   {
-    name: "Java",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
-  },
-  {
-    name: "Spring",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg",
+    name: "FastAPI",
+    icon: "https://cdn.worldvectorlogo.com/logos/fastapi-1.svg",
   },
   {
     name: "PostgreSQL",

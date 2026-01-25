@@ -6,8 +6,8 @@ const ContactSection = () => {
       </div>
       <div className="home__stagger-el">
         <p className="home__hero-subtitle bottom">
-          I'm currently looking for new opportunities. Whether you have a
-          question or just want to say hi, my inbox is always open.
+          Feel free to reach out if you have a question, want to collaborate, or
+          just want to connect, my inbox is always open.
         </p>
       </div>
       <div className="home__stagger-el">

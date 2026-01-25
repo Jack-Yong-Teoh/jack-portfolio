@@ -1,13 +1,6 @@
-import { useEffect, useState } from "react";
 import { techStack } from "../_data/homePageData";
 
 const HeroSection = () => {
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
   return (
     <section id="hero" className="home__hero home__reveal">
       <div className="home__hero-top">
