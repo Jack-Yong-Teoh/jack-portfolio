@@ -8,20 +8,17 @@ import {
 export const projects: Project[] = [
   {
     title: "AI Cache Saver",
-    description:
-      "A performance optimization tool designed to cache AI model responses, significantly reducing API latency and operational costs for repetitive queries.",
+    description: "project.project_1_description",
     link: "https://github.com/Jack-Yong-Teoh/ai-cache-saver",
   },
   {
     title: "MERN Task Manager",
-    description:
-      "A comprehensive task management platform built with MongoDB, Express, React, and Node.js. Features secure authentication, state management, and full CRUD capabilities.",
+    description: "project.project_2_description",
     link: "https://github.com/Jack-Yong-Teoh/mern-task-management-system",
   },
   {
     title: "FitBro V2: AI Diet System",
-    description:
-      "An intelligent diet tracking application utilizing image recognition algorithms to analyze food photos and automatically estimate calorie and macronutrient content.",
+    description: "project.project_3_description",
     link: "https://github.com/Jack-Yong-Teoh/FitBro-V2-Image-recognition-diet-system",
   },
 ];
@@ -29,17 +26,15 @@ export const projects: Project[] = [
 export const experiences: Experience[] = [
   {
     company: "Axflix Technologies",
-    role: "Fullstack Software Engineer",
-    period: "Aug 2024 — Present",
-    description:
-      "Developed and maintained full-stack applications using Next.js, TypeScript, FastAPI, and PostgreSQL, contributing to systems including crypto payments, SMS, streaming, and internal platforms. Collaborated in Agile workflows while improving system reliability, testing standards, and SEO/localization efficiency.",
+    role: "experience.role_1",
+    period: "experience.period_1",
+    description: "experience.description_1",
   },
   {
     company: "ARB Berhad",
-    role: "Software Engineer",
-    period: "Jul 2023 — Aug 2024",
-    description:
-      "Led the revamp of legacy repositories, improving load times by 60%. Implemented reusable components using Vue.js and React while managing hot-fixes for production issues.",
+    role: "experience.role_2",
+    period: "experience.period_2",
+    description: "experience.description_2",
   },
   {
     company: "Finexus Group",
@@ -52,7 +47,7 @@ export const experiences: Experience[] = [
 
 export const education: Education[] = [
   {
-    university: "Universiti Malaya",
+    university: "University of Malaya",
     degree: "Master of Software Engineering (Software Technology)",
     period: "Oct 2025 — Jul 2027",
     description:

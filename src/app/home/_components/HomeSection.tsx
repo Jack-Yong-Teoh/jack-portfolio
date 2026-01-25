@@ -1,25 +1,27 @@
 import { techStack } from "../_data/homePageData";
+import { useTranslate } from "@tolgee/react";
 
 const HeroSection = () => {
+  const { t } = useTranslate();
+
   return (
     <section id="hero" className="home__hero home__reveal">
       <div className="home__hero-top">
         <div className="home__hero-content">
           <div className="home__stagger-el">
-            <span className="home__hero-overline">Hi, I am Teoh Jack Yong</span>
+            <span className="home__hero-overline">
+              {t("hero.introduction")}
+            </span>
           </div>
           <div className="home__stagger-el">
             <h1 className="home__hero-title">
-              Building my future,
+              {t("hero.headline_1")}
               <br />
-              one step at a time
+              {t("hero.headline_2")}
             </h1>
           </div>
           <div className="home__stagger-el">
-            <p className="home__hero-subtitle">
-              I'm a Full-Stack Engineer focused on building scalable, reliable,
-              and well-structured web applications.
-            </p>
+            <p className="home__hero-subtitle">{t("hero.subtitle")}</p>
           </div>
         </div>
 

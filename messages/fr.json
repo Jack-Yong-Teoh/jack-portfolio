@@ -1,0 +1,30 @@
+{
+  "experience": {
+    "description_1": "Développement et maintenance d'applications full-stack à l'aide de Next.js, TypeScript, FastAPI et PostgreSQL, contribuant à des systèmes tels que les paiements cryptographiques, les SMS, le streaming et les plateformes internes. Collaboration dans le cadre de workflows Agile tout en améliorant la fiabilité des systèmes, les normes de test et l'efficacité du référencement/de la localisation.",
+    "description_2": "A dirigé la refonte des référentiels existants, améliorant les temps de chargement de 60 %. A mis en œuvre des composants réutilisables à l'aide de Vue.js et React tout en gérant les correctifs urgents pour les problèmes de production.",
+    "period_1": "Août 2024 — Aujourd'hui",
+    "period_2": "Juillet 2023 — août 2024",
+    "role_1": "Ingénieur logiciel full-stack",
+    "role_2": "Ingénieur logiciel"
+  },
+  "hero": {
+    "headline_1": "Construire mon avenir,",
+    "headline_2": "une étape à la fois",
+    "introduction": "Bonjour, je suis Teoh Jack Yong",
+    "subtitle": "Je suis un ingénieur Full-Stack qui se concentre sur la construction d'applications web évolutives, fiables et bien structurées."
+  },
+  "navigation": {
+    "contact": "Contact",
+    "experience": "Expérience",
+    "home": "Accueil",
+    "project": "Projet",
+    "resume": "Résumé"
+  },
+  "project": {
+    "project_1_description": "Un outil d'optimisation des performances conçu pour mettre en cache les réponses des modèles d'IA, réduisant ainsi de manière significative la latence des API et les coûts opérationnels liés aux requêtes répétitives.",
+    "project_2_description": "Une plateforme complète de gestion des tâches développée avec MongoDB, Express, React et Node.js. Elle offre une authentification sécurisée, une gestion des états et des fonctionnalités CRUD complètes.",
+    "project_3_description": "Une application intelligente de suivi alimentaire qui utilise des algorithmes de reconnaissance d'images pour analyser les photos d'aliments et estimer automatiquement leur teneur en calories et en macronutriments.",
+    "related_project": "Projet connexe",
+    "view_project": "Voir le projet"
+  }
+}

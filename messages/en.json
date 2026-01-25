@@ -1,0 +1,30 @@
+{
+  "experience": {
+    "description_1": "Developed and maintained full-stack applications using Next.js, TypeScript, FastAPI, and PostgreSQL, contributing to systems including crypto payments, SMS, streaming, and internal platforms. Collaborated in Agile workflows while improving system reliability, testing standards, and SEO/localization efficiency.",
+    "description_2": "Led the revamp of legacy repositories, improving load times by 60%. Implemented reusable components using Vue.js and React while managing hot-fixes for production issues.",
+    "period_1": "Aug 2024 — Present",
+    "period_2": "Jul 2023 — Aug 2024",
+    "role_1": "Fullstack Software Engineer",
+    "role_2": "Software Engineer"
+  },
+  "hero": {
+    "headline_1": "Building my future,",
+    "headline_2": "one step at a time",
+    "introduction": "Hi, I am Teoh Jack Yong",
+    "subtitle": "I'm a Full-Stack Engineer focused on building scalable, reliable, and well-structured web applications."
+  },
+  "navigation": {
+    "contact": "Contact",
+    "experience": "Experience",
+    "home": "Home",
+    "project": "Project",
+    "resume": "Resume"
+  },
+  "project": {
+    "project_1_description": "A performance optimization tool designed to cache AI model responses, significantly reducing API latency and operational costs for repetitive queries.",
+    "project_2_description": "A comprehensive task management platform built with MongoDB, Express, React, and Node.js. Features secure authentication, state management, and full CRUD capabilities.",
+    "project_3_description": "An intelligent diet tracking application utilizing image recognition algorithms to analyze food photos and automatically estimate calorie and macronutrient content.",
+    "related_project": "Related Project",
+    "view_project": "View Project"
+  }
+}

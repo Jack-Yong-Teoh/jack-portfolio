@@ -1,20 +1,37 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import IMAGES from "@/assets";
+import { useTolgee } from "@tolgee/react";
+import { setLanguage } from "@/tolgee/language";
+import { useTranslate } from "@tolgee/react";
 
 const languages = [
   { code: "en", name: "English", flag: IMAGES.english_icon },
   { code: "zh", name: "中文", flag: IMAGES.china_icon },
   { code: "fr", name: "Français", flag: IMAGES.france_icon },
-  { code: "jp", name: "日本語", flag: IMAGES.japan_icon },
+  { code: "ja", name: "日本語", flag: IMAGES.japan_icon },
   { code: "es", name: "Español", flag: IMAGES.spain_icon },
 ];
 
 const NavigationBar = () => {
-  const [currentLang, setCurrentLang] = useState(languages[0]);
+  const tolgee = useTolgee(["language"]);
+  const activeLang = tolgee.getLanguage();
+  const { t } = useTranslate();
+
+  const [currentLang, setCurrentLang] = useState(
+    languages.find((l) => l.code === activeLang) || languages[0],
+  );
+
   const [isLangOpen, setIsLangOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const found = languages.find((l) => l.code === activeLang);
+    if (found) {
+      setCurrentLang(found);
+    }
+  }, [activeLang]);
 
   const toggleLangDropdown = () => setIsLangOpen(!isLangOpen);
   const toggleMobileMenu = () => {
@@ -26,9 +43,11 @@ const NavigationBar = () => {
     }
   };
 
-  const selectLanguage = (lang: (typeof languages)[0]) => {
+  const selectLanguage = async (lang: (typeof languages)[0]) => {
     setCurrentLang(lang);
     setIsLangOpen(false);
+    await setLanguage(lang.code);
+    tolgee.changeLanguage(lang.code);
   };
 
   const closeMobileMenu = () => {
@@ -48,22 +67,22 @@ const NavigationBar = () => {
         <ul className="home__nav-list">
           <li>
             <a href="#hero" className="home__nav-link">
-              Home
+              {t("navigation.home")}
             </a>
           </li>
           <li>
             <a href="#projects" className="home__nav-link">
-              Work
+              {t("navigation.project")}
             </a>
           </li>
           <li>
             <a href="#experience" className="home__nav-link">
-              Experience
+              {t("navigation.experience")}
             </a>
           </li>
           <li>
             <a href="#contact" className="home__nav-link">
-              Contact
+              {t("navigation.contact")}
             </a>
           </li>
         </ul>
@@ -114,7 +133,7 @@ const NavigationBar = () => {
             rel="noopener noreferrer"
             className="home__resume-btn"
           >
-            Resume
+            {t("navigation.resume")}
           </a>
 
           <button
@@ -132,22 +151,22 @@ const NavigationBar = () => {
         <ul className="home__mobile-links">
           <li>
             <a href="#hero" onClick={closeMobileMenu}>
-              Home
+              {t("navigation.home")}
             </a>
           </li>
           <li>
             <a href="#projects" onClick={closeMobileMenu}>
-              Work
+              {t("navigation.project")}
             </a>
           </li>
           <li>
             <a href="#experience" onClick={closeMobileMenu}>
-              Experience
+              {t("navigation.experience")}
             </a>
           </li>
           <li>
             <a href="#contact" onClick={closeMobileMenu}>
-              Contact
+              {t("navigation.contact")}
             </a>
           </li>
         </ul>
@@ -159,7 +178,7 @@ const NavigationBar = () => {
             rel="noopener noreferrer"
             className="home__resume-btn full-width"
           >
-            Resume
+            {t("navigation.resume")}
           </a>
         </div>
       </div>

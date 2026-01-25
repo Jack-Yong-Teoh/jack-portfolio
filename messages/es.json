@@ -1,0 +1,30 @@
+{
+  "experience": {
+    "description_1": "Desarrollé y mantuve aplicaciones full-stack utilizando Next.js, TypeScript, FastAPI y PostgreSQL, contribuyendo a sistemas que incluyen pagos criptográficos, SMS, streaming y plataformas internas. Colaboré en flujos de trabajo ágiles mientras mejoraba la fiabilidad del sistema, los estándares de prueba y la eficiencia del SEO/localización.",
+    "description_2": "Dirigí la renovación de repositorios heredados, mejorando los tiempos de carga en un 60 %. Implementé componentes reutilizables utilizando Vue.js y React, al tiempo que gestionaba soluciones urgentes para problemas de producción.",
+    "period_1": "Agosto de 2024 — Actualidad",
+    "period_2": "Julio de 2023 — Agosto de 2024",
+    "role_1": "Ingeniero de software full stack",
+    "role_2": "Ingeniero de software"
+  },
+  "hero": {
+    "headline_1": "Construyendo mi futuro,",
+    "headline_2": "Un paso a la vez",
+    "introduction": "Hola, soy Teoh Jack Yong",
+    "subtitle": "Soy un Full-Stack Engineer centrado en la construcción de aplicaciones web escalables, fiables y bien estructuradas."
+  },
+  "navigation": {
+    "contact": "Contacto",
+    "experience": "Experiencia",
+    "home": "Inicio",
+    "project": "Proyecto",
+    "resume": "Reanudar"
+  },
+  "project": {
+    "project_1_description": "Una herramienta de optimización del rendimiento diseñada para almacenar en caché las respuestas de los modelos de IA, lo que reduce significativamente la latencia de la API y los costes operativos de las consultas repetitivas.",
+    "project_2_description": "Una plataforma integral de gestión de tareas creada con MongoDB, Express, React y Node.js. Cuenta con autenticación segura, gestión de estado y capacidades CRUD completas.",
+    "project_3_description": "Una aplicación inteligente para el seguimiento de la dieta que utiliza algoritmos de reconocimiento de imágenes para analizar fotos de alimentos y estimar automáticamente el contenido calórico y de macronutrientes.",
+    "related_project": "Proyecto Relacionado",
+    "view_project": "Ver Proyecto"
+  }
+}
