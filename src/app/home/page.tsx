@@ -8,6 +8,7 @@ import ProjectSection from "./_components/ProjectSection";
 import ExperienceSection from "./_components/ExperienceSection";
 import EducationSection from "./_components/EducatonSection";
 import NavigationBar from "./_components/NavigationBar";
+import FooterSection from "./_components/Footer";
 
 const Home = () => {
   useEffect(() => {
@@ -45,6 +46,7 @@ const Home = () => {
         <EducationSection education={education} />
         <ContactSection />
       </main>
+      <FooterSection />
     </div>
   );
 };

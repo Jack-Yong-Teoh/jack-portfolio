@@ -433,6 +433,19 @@
     }
   }
 
+  &__footer {
+    width: 100%;
+    padding: 2rem 0;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    margin-top: auto;
+
+    &-text {
+      color: var(--gray);
+      font-size: 0.875rem;
+    }
+  }
+
   &__reveal {
     opacity: 1;
 
