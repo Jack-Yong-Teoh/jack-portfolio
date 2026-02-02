@@ -13,11 +13,13 @@
   },
   "experience": {
     "description_1": "Desarrollé y mantuve aplicaciones full-stack utilizando Next.js, TypeScript, FastAPI y PostgreSQL, contribuyendo a sistemas que incluyen pagos criptográficos, SMS, streaming y plataformas internas. Colaboré en flujos de trabajo ágiles mientras mejoraba la fiabilidad del sistema, los estándares de prueba y la eficiencia del SEO/localización.",
-    "description_2": "Dirigí la renovación de repositorios heredados, mejorando los tiempos de carga en un 60 %. Implementé componentes reutilizables utilizando Vue.js y React, al tiempo que gestionaba soluciones urgentes para problemas de producción.",
+    "description_2": "Desarrollé y mantuve aplicaciones adaptativas utilizando React, TypeScript y FastAPI, utilizando Redux para la gestión global del estado y Git para el control colaborativo de versiones.",
     "description_3": "Desarrollo de un Kit de Desarrollo de Software Web (SDK) para billeteras electrónicas utilizando React, TypeScript y GraphQL. Centrado en la implementación de API y la simplificación de la estructura del proyecto.",
+    "description_4": "Dirigí la renovación de repositorios heredados, mejorando los tiempos de carga en un 60 %. Implementé componentes reutilizables utilizando Vue.js y React, al tiempo que gestionaba soluciones urgentes para problemas de producción.",
     "period_1": "Agosto de 2024 — Actualidad",
-    "period_2": "Julio de 2023 — Agosto de 2024",
+    "period_2": "Julio de 2023 — Diciembre de 2023",
     "period_3": "Nov 2022 — Jun 2023",
+    "period_4": "Enero de 2024 — Agosto de 2024",
     "role_1": "Ingeniero de software full stack",
     "role_2": "Ingeniero de software",
     "role_3": "Pasante de Ingeniería de Software"

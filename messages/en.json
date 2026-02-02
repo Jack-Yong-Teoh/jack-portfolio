@@ -13,11 +13,13 @@
   },
   "experience": {
     "description_1": "Developed and maintained full-stack applications using Next.js, TypeScript, FastAPI, and PostgreSQL, contributing to systems including crypto payments, SMS, streaming, and internal platforms. Collaborated in Agile workflows while improving system reliability, testing standards, and SEO/localization efficiency.",
-    "description_2": "Led the revamp of legacy repositories, improving load times by 60%. Implemented reusable components using Vue.js and React while managing hot-fixes for production issues.",
+    "description_2": "Built and maintained responsive applications using React, TypeScript, and FastAPI, utilizing Redux for global state management and Git for collaborative version control.",
     "description_3": "Developed a Web Software Development Kit (SDK) for E-Wallets using React, TypeScript, and GraphQL. Focused on API implementation and simplifying project structure",
+    "description_4": "Led the revamp of legacy repositories, improving load times by 60%. Implemented reusable components using Vue.js and React while managing hot-fixes for production issues.",
     "period_1": "Aug 2024 — Present",
-    "period_2": "Jul 2023 — Aug 2024",
+    "period_2": "Jul 2023 — Dec 2023",
     "period_3": "Nov 2022 — Jun 2023",
+    "period_4": "Jan 2024 — Aug 2024",
     "role_1": "Fullstack Software Engineer",
     "role_2": "Software Engineer",
     "role_3": "Software Engineer Intern"

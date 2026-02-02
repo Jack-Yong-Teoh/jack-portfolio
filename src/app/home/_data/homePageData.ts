@@ -31,6 +31,12 @@ export const experiences: Experience[] = [
     description: "experience.description_1",
   },
   {
+    company: "Macbes Sdn Bhd",
+    role: "experience.role_2",
+    period: "experience.period_4",
+    description: "experience.description_4",
+  },
+  {
     company: "ARB Berhad",
     role: "experience.role_2",
     period: "experience.period_2",
