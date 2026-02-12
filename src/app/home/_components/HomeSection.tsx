@@ -1,3 +1,4 @@
+import IMAGES from "@/assets";
 import { techStack } from "../_data/homePageData";
 import { useTranslate } from "@tolgee/react";
 
@@ -27,7 +28,7 @@ const HeroSection = () => {
 
         <div className="home__hero-avatar-container home__stagger-el">
           <img
-            src="https://media.licdn.com/dms/image/v2/D5603AQEhWeugnbQQ8g/profile-displayphoto-crop_800_800/B56ZutrK3sIMAM-/0/1768145334570?e=1770854400&v=beta&t=Vt7ocu_92MwHVfxzL4jFiDZcaQ7HKxr0h9zouMflKR4"
+            src={IMAGES.profile_image}
             alt="Profile Picture"
             className="home__hero-avatar"
           />
