@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import IMAGES from "@/assets";
 import { useTolgee, useTranslate } from "@tolgee/react";
 import { usePathname, useSearchParams } from "next/navigation";
@@ -56,8 +56,9 @@ const NavigationBar = () => {
     if (query) {
       newPath += `?${query}`;
     }
-
-    window.location.href = newPath;
+    if (typeof window !== "undefined") {
+      window.location.assign(newPath);
+    }
   };
 
   const closeMobileMenu = () => {
