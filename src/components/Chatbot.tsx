@@ -100,7 +100,10 @@ export default function Chatbot() {
         <section className="chatbot__window" aria-label="Portfolio assistant">
           <header className="chatbot__header">
             <div className="chatbot__header-content">
-              <p className="chatbot__eyebrow">{t("chatbot.eyebrow")}</p>
+              <div className="chatbot__eyebrow-row">
+                <p className="chatbot__eyebrow">{t("chatbot.eyebrow")}</p>
+                <span className="chatbot__beta-tag">Beta</span>
+              </div>
             </div>
             <button
               className="chatbot__close-btn"
@@ -174,7 +177,7 @@ export default function Chatbot() {
         aria-label={isOpen ? t("chatbot.close") : t("chatbot.open")}
       >
         <span className="chatbot__toggle-icon" aria-hidden="true">
-          {"AI"}
+          {isOpen ? "x" : "AI"}
         </span>
       </button>
     </div>
