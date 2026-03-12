@@ -9,6 +9,7 @@ import ExperienceSection from "./_components/ExperienceSection";
 import EducationSection from "./_components/EducatonSection";
 import NavigationBar from "./_components/NavigationBar";
 import FooterSection from "./_components/Footer";
+import Chatbot from "@/components/Chatbot";
 
 const Home = () => {
   useEffect(() => {
@@ -47,6 +48,7 @@ const Home = () => {
         <ContactSection />
       </main>
       <FooterSection />
+      <Chatbot />
     </div>
   );
 };

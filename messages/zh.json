@@ -33,6 +33,17 @@
     "introduction": "你好，我是张杰咏",
     "subtitle": "我是一名全栈工程师，专注于构建可扩展、可靠和结构良好的网络应用程序。"
   },
+  "chatbot": {
+    "eyebrow": "AI 助手",
+    "empty_state": "你好！欢迎询问我的经历或项目。",
+    "input_placeholder": "请输入消息…",
+    "send": "发送",
+    "close": "关闭聊天",
+    "open": "打开聊天",
+    "typing": "助手正在输入",
+    "error": "连接问题，请重试。",
+    "error_reply": "抱歉，回答时遇到问题，请重试。"
+  },
   "navigation": {
     "contact": "联系",
     "education": "教育 ",
