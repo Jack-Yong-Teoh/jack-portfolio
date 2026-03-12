@@ -1,4 +1,3 @@
-// app/api/chat/route.ts
 import OpenAI from "openai";
 import { NextResponse } from "next/server";
 
@@ -11,7 +10,6 @@ const MODEL =
   process.env.NEXT_PUBLIC_AI_MODEL ||
   "hf.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF:Q4_K_M";
 
-// Pull the hidden instructions directly from the server environment variables
 const systemPrompt = {
   role: "system",
   content:

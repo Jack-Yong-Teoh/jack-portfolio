@@ -1,7 +1,7 @@
-// components/Chatbot.tsx
 "use client";
 
 import { useState, useRef, useEffect } from "react";
+import { useTranslate } from "@tolgee/react";
 
 type Message = {
   role: "user" | "assistant" | "system";
@@ -14,6 +14,7 @@ export default function Chatbot() {
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const { t } = useTranslate();
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -80,13 +81,12 @@ export default function Chatbot() {
       }
     } catch (error) {
       console.error("Error sending message:", error);
-      setError("Connection issue. Please try again.");
+      setError(t("chatbot.error"));
       setMessages((prev) => [
         ...prev,
         {
           role: "assistant",
-          content:
-            "Sorry, I ran into an issue while answering. Please try again.",
+          content: t("chatbot.error_reply"),
         },
       ]);
     } finally {
@@ -100,14 +100,13 @@ export default function Chatbot() {
         <section className="chatbot__window" aria-label="Portfolio assistant">
           <header className="chatbot__header">
             <div className="chatbot__header-content">
-              <p className="chatbot__eyebrow">AI Assistant</p>
-              <h2 className="chatbot__title">Ask about my work</h2>
+              <p className="chatbot__eyebrow">{t("chatbot.eyebrow")}</p>
             </div>
             <button
               className="chatbot__close-btn"
               type="button"
               onClick={() => setIsOpen(false)}
-              aria-label="Close chat"
+              aria-label={t("chatbot.close")}
             >
               <span aria-hidden="true">+</span>
             </button>
@@ -115,9 +114,7 @@ export default function Chatbot() {
 
           <div className="chatbot__messages" role="log" aria-live="polite">
             {messages.length === 0 && (
-              <p className="chatbot__empty-state">
-                Hi! Ask me anything about my experience or projects.
-              </p>
+              <p className="chatbot__empty-state">{t("chatbot.empty_state")}</p>
             )}
 
             {messages.map((msg, idx) => (
@@ -133,7 +130,7 @@ export default function Chatbot() {
               <div className="chatbot__bubble chatbot__bubble--assistant chatbot__bubble--typing">
                 <div
                   className="chatbot__typing"
-                  aria-label="Assistant is typing"
+                  aria-label={t("chatbot.typing")}
                 >
                   <span />
                   <span />
@@ -153,7 +150,7 @@ export default function Chatbot() {
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={(e) => e.key === "Enter" && sendMessage()}
-              placeholder="Type your message..."
+              placeholder={t("chatbot.input_placeholder")}
               disabled={isLoading}
             />
             <button
@@ -162,7 +159,7 @@ export default function Chatbot() {
               onClick={sendMessage}
               disabled={isLoading || !input.trim()}
             >
-              Send
+              {t("chatbot.send")}
             </button>
           </div>
 
@@ -174,10 +171,10 @@ export default function Chatbot() {
         className={`chatbot__toggle-btn ${isOpen ? "chatbot__toggle-btn--active" : ""}`}
         type="button"
         onClick={() => setIsOpen(!isOpen)}
-        aria-label={isOpen ? "Close chat" : "Open chat"}
+        aria-label={isOpen ? t("chatbot.close") : t("chatbot.open")}
       >
         <span className="chatbot__toggle-icon" aria-hidden="true">
-          {isOpen ? "+" : "AI"}
+          {"AI"}
         </span>
       </button>
     </div>

@@ -33,6 +33,17 @@
     "introduction": "Bonjour, je suis Teoh Jack Yong",
     "subtitle": "Je suis un ingénieur Full-Stack qui se concentre sur la construction d'applications web évolutives, fiables et bien structurées."
   },
+  "chatbot": {
+    "eyebrow": "Assistant IA",
+    "empty_state": "Bonjour ! Posez-moi des questions sur mon expérience ou mes projets.",
+    "input_placeholder": "Tapez votre message…",
+    "send": "Envoyer",
+    "close": "Fermer le chat",
+    "open": "Ouvrir le chat",
+    "typing": "L'assistant est en train d'écrire",
+    "error": "Problème de connexion. Veuillez réessayer.",
+    "error_reply": "Désolé, une erreur s'est produite. Veuillez réessayer."
+  },
   "navigation": {
     "contact": "Contact",
     "education": "Éducation",
