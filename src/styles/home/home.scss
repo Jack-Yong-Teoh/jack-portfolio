@@ -575,7 +575,7 @@
         &::before {
           opacity: 0.3;
         }
-        .home__hero-avatar {
+        .home__hero-avatar-flip {
           transform: translate(-4px, -4px); // Slight lift opposite to frame
         }
       }
@@ -625,14 +625,35 @@
       }
     }
 
-    &-avatar {
+    &-avatar-flip {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+
+      &.is-real {
+        transform: rotateY(180deg);
+      }
+    }
+
+    &-avatar-face {
+      position: absolute;
+      inset: 0;
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+
+      &--cartoon {
+        transform: rotateY(180deg);
+      }
+    }
+
+    &-avatar-img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       border-radius: 32px;
-      // border: 1px solid rgba(255, 255, 255, 0.1); // Removed border for cleaner look
       box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5);
-      transition: transform 0.4s ease;
       background: var(--secondary-2);
     }
 

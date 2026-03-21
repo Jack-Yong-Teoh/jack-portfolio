@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    // sitemap: 'https://.../sitemap.xml', // Add domain when known
+    sitemap: "https://portfolio.jackyong.dev/sitemap.xml",
   };
 }
