@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import { useTranslate } from "@tolgee/react";
+import IMAGES from "@/assets";
 
 type Message = {
   role: "user" | "assistant" | "system";
@@ -174,9 +175,19 @@ export default function Chatbot() {
         onClick={() => setIsOpen(!isOpen)}
         aria-label={isOpen ? t("chatbot.close") : t("chatbot.open")}
       >
-        <span className="chatbot__toggle-icon" aria-hidden="true">
-          {isOpen ? "x" : "AI"}
-        </span>
+        <div className="chatbot__toggle-icon-wrapper">
+          <img
+            src={isOpen ? IMAGES.close_icon : IMAGES.robot_icon}
+            alt=""
+            className="chatbot__toggle-icon"
+          />
+          <img
+            src={IMAGES.online_indicator}
+            alt=""
+            className="chatbot__online-indicator"
+            aria-hidden="true"
+          />
+        </div>
       </button>
     </div>
   );
