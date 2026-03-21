@@ -29,7 +29,7 @@ export default function Chatbot() {
   useEffect(() => {
     if (!isOpen) return;
 
-    inputRef.current?.focus();
+    // inputRef.current?.focus();
   }, [isOpen]);
 
   useEffect(() => {
@@ -169,26 +169,28 @@ export default function Chatbot() {
         </section>
       )}
 
-      <button
-        className={`chatbot__toggle-btn ${isOpen ? "chatbot__toggle-btn--active" : ""}`}
-        type="button"
-        onClick={() => setIsOpen(!isOpen)}
-        aria-label={isOpen ? t("chatbot.close") : t("chatbot.open")}
-      >
-        <div className="chatbot__toggle-icon-wrapper">
-          <img
-            src={isOpen ? IMAGES.close_icon : IMAGES.robot_icon}
-            alt=""
-            className="chatbot__toggle-icon"
-          />
-          <img
-            src={IMAGES.online_indicator}
-            alt=""
-            className="chatbot__online-indicator"
-            aria-hidden="true"
-          />
-        </div>
-      </button>
+      {!isOpen && (
+        <button
+          className="chatbot__toggle-btn"
+          type="button"
+          onClick={() => setIsOpen(!isOpen)}
+          aria-label={t("chatbot.open")}
+        >
+          <div className="chatbot__toggle-icon-wrapper">
+            <img
+              src={IMAGES.robot_icon}
+              alt="bot-toggle-icon"
+              className="chatbot__toggle-icon"
+            />
+            <img
+              src={IMAGES.online_indicator}
+              alt="bot-online-indicator"
+              className="chatbot__online-indicator"
+              aria-hidden="true"
+            />
+          </div>
+        </button>
+      )}
     </div>
   );
 }
