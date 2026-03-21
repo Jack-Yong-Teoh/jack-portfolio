@@ -9,12 +9,14 @@ type Message = {
 };
 
 export default function Chatbot() {
+  const { t } = useTranslate();
   const [isOpen, setIsOpen] = useState(false);
-  const [messages, setMessages] = useState<Message[]>([]);
+  const [messages, setMessages] = useState<Message[]>([
+    { role: "assistant", content: t("chatbot.empty_state") },
+  ]);
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const { t } = useTranslate();
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -116,10 +118,6 @@ export default function Chatbot() {
           </header>
 
           <div className="chatbot__messages" role="log" aria-live="polite">
-            {messages.length === 0 && (
-              <p className="chatbot__empty-state">{t("chatbot.empty_state")}</p>
-            )}
-
             {messages.map((msg, idx) => (
               <article
                 key={idx}
