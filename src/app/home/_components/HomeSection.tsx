@@ -26,12 +26,28 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <div className="home__hero-avatar-container home__stagger-el">
-          <img
-            src={IMAGES.profile_image}
-            alt="Profile Picture"
-            className="home__hero-avatar"
-          />
+        <div
+          className="home__hero-avatar-container home__stagger-el"
+          role="button"
+          tabIndex={0}
+          aria-label="Toggle profile image"
+        >
+          <div className={`home__hero-avatar-flip is-real`}>
+            <div className="home__hero-avatar-face home__hero-avatar-face--real">
+              <img
+                src={IMAGES.profile_image}
+                alt="Real profile picture"
+                className="home__hero-avatar-img"
+              />
+            </div>
+            <div className="home__hero-avatar-face home__hero-avatar-face--cartoon">
+              <img
+                src={IMAGES.cartoon_profile_image}
+                alt="Cartoon profile picture"
+                className="home__hero-avatar-img"
+              />
+            </div>
+          </div>
         </div>
       </div>
 

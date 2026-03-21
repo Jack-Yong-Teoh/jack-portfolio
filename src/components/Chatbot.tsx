@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import { useTranslate } from "@tolgee/react";
+import IMAGES from "@/assets";
 
 type Message = {
   role: "user" | "assistant" | "system";
@@ -9,12 +10,14 @@ type Message = {
 };
 
 export default function Chatbot() {
+  const { t } = useTranslate();
   const [isOpen, setIsOpen] = useState(false);
-  const [messages, setMessages] = useState<Message[]>([]);
+  const [messages, setMessages] = useState<Message[]>([
+    { role: "assistant", content: t("chatbot.empty_state") },
+  ]);
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const { t } = useTranslate();
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -26,7 +29,7 @@ export default function Chatbot() {
   useEffect(() => {
     if (!isOpen) return;
 
-    inputRef.current?.focus();
+    // inputRef.current?.focus();
   }, [isOpen]);
 
   useEffect(() => {
@@ -116,10 +119,6 @@ export default function Chatbot() {
           </header>
 
           <div className="chatbot__messages" role="log" aria-live="polite">
-            {messages.length === 0 && (
-              <p className="chatbot__empty-state">{t("chatbot.empty_state")}</p>
-            )}
-
             {messages.map((msg, idx) => (
               <article
                 key={idx}
@@ -145,6 +144,8 @@ export default function Chatbot() {
             <div ref={messagesEndRef} />
           </div>
 
+          {error && <p className="chatbot__error">{error}</p>}
+
           <div className="chatbot__input-wrap">
             <input
               ref={inputRef}
@@ -165,21 +166,31 @@ export default function Chatbot() {
               {t("chatbot.send")}
             </button>
           </div>
-
-          {error && <p className="chatbot__error">{error}</p>}
         </section>
       )}
 
-      <button
-        className={`chatbot__toggle-btn ${isOpen ? "chatbot__toggle-btn--active" : ""}`}
-        type="button"
-        onClick={() => setIsOpen(!isOpen)}
-        aria-label={isOpen ? t("chatbot.close") : t("chatbot.open")}
-      >
-        <span className="chatbot__toggle-icon" aria-hidden="true">
-          {isOpen ? "x" : "AI"}
-        </span>
-      </button>
+      {!isOpen && (
+        <button
+          className="chatbot__toggle-btn"
+          type="button"
+          onClick={() => setIsOpen(!isOpen)}
+          aria-label={t("chatbot.open")}
+        >
+          <div className="chatbot__toggle-icon-wrapper">
+            <img
+              src={IMAGES.robot_icon}
+              alt="bot-toggle-icon"
+              className="chatbot__toggle-icon"
+            />
+            <img
+              src={IMAGES.online_indicator}
+              alt="bot-online-indicator"
+              className="chatbot__online-indicator"
+              aria-hidden="true"
+            />
+          </div>
+        </button>
+      )}
     </div>
   );
 }
