@@ -5,6 +5,7 @@ import spain_icon from "../assets/project/spain-icon.svg";
 import japan_icon from "../assets/project/japan-icon.svg";
 import logo from "../assets/project/jack-logo.webp";
 import profile_image from "../assets/project/profile-picture.jpeg";
+import cartoon_profile_image from "../assets/project/cartoon-profile-pic.webp";
 
 const IMAGES = {
   logo: logo.src,
@@ -14,6 +15,7 @@ const IMAGES = {
   spain_icon: spain_icon.src,
   japan_icon: japan_icon.src,
   profile_image: profile_image.src,
+  cartoon_profile_image: cartoon_profile_image.src,
 };
 
 export default IMAGES;

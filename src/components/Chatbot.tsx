@@ -145,6 +145,8 @@ export default function Chatbot() {
             <div ref={messagesEndRef} />
           </div>
 
+          {error && <p className="chatbot__error">{error}</p>}
+
           <div className="chatbot__input-wrap">
             <input
               ref={inputRef}
@@ -165,8 +167,6 @@ export default function Chatbot() {
               {t("chatbot.send")}
             </button>
           </div>
-
-          {error && <p className="chatbot__error">{error}</p>}
         </section>
       )}
 
