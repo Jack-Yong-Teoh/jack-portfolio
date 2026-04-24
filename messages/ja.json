@@ -1,62 +1,46 @@
 {
-  "contact": {
-    "subtitle": "ご質問やコラボレーションのご提案、あるいは単に連絡を取り合いたい場合など、お気軽にご連絡ください。いつでもメールをお待ちしております。",
-    "title": "つながりましょう"
-  },
-  "education": {
-    "degree_1": "ソフトウェア工学修士（ソフトウェア技術）",
-    "degree_2": "コンピュータサイエンス学士（ソフトウェア工学）",
-    "description_1": "クリーンアーキテクチャ、運用安定性、一貫したエンジニアリング基準に焦点を当てる。コースワークには、ソフトウェアシステムアーキテクチャとフレームワークベースのソフトウェア設計が含まれます。",
-    "description_2": "CGPA 3.60 / 4.00で卒業。学長リストおよび学部長リスト受賞。関連コースワーク：ソフトウェアプロジェクト管理、システム分析と設計、Webプログラミング、データベース管理。",
-    "period_1": "2025年10月 — 2027年7月",
-    "period_2": "2020年6月 — 2023年6月"
-  },
-  "experience": {
-    "description_1": "Next.js、TypeScript、FastAPI、PostgreSQLを使用したフルスタックアプリケーションの開発・保守を担当し、暗号通貨決済、SMS、ストリーミング、社内プラットフォームなどのシステム構築に貢献。アジャイルワークフローでの協働を通じて、システムの信頼性向上、テスト基準の確立、SEO/ローカライゼーション効率の改善を推進。",
-    "description_2": "React、TypeScript、FastAPIを使用してレスポンシブアプリケーションを構築・保守し、グローバル状態管理にはReduxを、共同バージョン管理にはGitを活用しました。",
-    "description_3": "React、TypeScript、GraphQLを使用してEウォレット用のWebソフトウェア開発キット（SDK）を開発。APIの実装とプロジェクト構造の簡素化に注力。",
-    "description_4": "レガシーリポジトリの刷新を主導し、読み込み時間を60%改善。Vue.jsとReactを用いた再利用可能なコンポーネントを実装し、本番環境の問題に対する緊急修正を管理。",
-    "period_1": "2024年8月 — 現在",
-    "period_2": "2023年7月 — 2023年12月",
-    "period_3": "2022年11月 — 2023年6月",
-    "period_4": "2024年1月 — 2024年8月",
-    "role_1": "フルスタックエンジニア",
-    "role_2": "ソフトウェアエンジニア",
-    "role_3": "ソフトウェアエンジニアインターン"
-  },
-  "footer": {
-    "rights_reserved": "著作権所有。"
-  },
-  "hero": {
-    "headline_1": "自分の未来を築く",
-    "headline_2": "一歩ずつ進め",
-    "introduction": "こんにちは、ジャックです",
-    "subtitle": "私はフルスタックエンジニアで、スケーラブルで信頼性が高く、構造化されたウェブアプリケーションの構築に注力しています。"
-  },
-  "chatbot": {
-    "eyebrow": "AIアシスタント",
-    "empty_state": "こんにちは！経歴やプロジェクトについてお気軽にどうぞ。",
-    "input_placeholder": "メッセージを入力…",
-    "send": "送信",
-    "close": "チャットを閉じる",
-    "open": "チャットを開く",
-    "typing": "アシスタントが入力中",
-    "error": "接続エラーです。もう一度お試しください。",
-    "error_reply": "申し訳ありません。回答中にエラーが発生しました。もう一度お試しください。"
-  },
-  "navigation": {
-    "contact": "連絡",
-    "education": "教育",
-    "experience": "経験",
-    "home": "首頁",
-    "project": "企画",
-    "resume": "履歴書"
-  },
-  "project": {
-    "project_1_description": "AIモデルの応答をキャッシュするように設計されたパフォーマンス最適化ツールで、APIの待ち時間と反復クエリの運用コストを大幅に削減します。",
-    "project_2_description": "MongoDB、Express、React、Node.jsで構築された包括的なタスク管理プラットフォーム。セキュアな認証、状態管理、完全なCRUD機能を備えています。",
-    "project_3_description": "画像認識アルゴリズムを活用し、食品写真を分析してカロリーと主要栄養素の含有量を自動的に推定する、知的な食事管理アプリケーション。",
-    "related_project": "関連企画",
-    "view_project": "企画を見る"
-  }
+  "chatbot.close": "チャットを閉じる",
+  "chatbot.empty_state": "こんにちは！経歴やプロジェクトについてお気軽にどうぞ。",
+  "chatbot.error": "接続エラーです。もう一度お試しください。",
+  "chatbot.error_reply": "申し訳ありません。回答中にエラーが発生しました。もう一度お試しください。",
+  "chatbot.eyebrow": "AIアシスタント",
+  "chatbot.input_placeholder": "メッセージを入力…",
+  "chatbot.open": "チャットを開く",
+  "chatbot.send": "送信",
+  "chatbot.typing": "アシスタントが入力中",
+  "contact.subtitle": "ご質問やコラボレーションのご提案、あるいは単に連絡を取り合いたい場合など、お気軽にご連絡ください。いつでもメールをお待ちしております。",
+  "contact.title": "つながりましょう",
+  "education.degree_1": "ソフトウェア工学修士（ソフトウェア技術）",
+  "education.degree_2": "コンピュータサイエンス学士（ソフトウェア工学）",
+  "education.description_1": "クリーンアーキテクチャ、運用安定性、一貫したエンジニアリング基準に焦点を当てる。コースワークには、ソフトウェアシステムアーキテクチャとフレームワークベースのソフトウェア設計が含まれます。",
+  "education.description_2": "CGPA 3.60 / 4.00で卒業。学長リストおよび学部長リスト受賞。関連コースワーク：ソフトウェアプロジェクト管理、システム分析と設計、Webプログラミング、データベース管理。",
+  "education.period_1": "2025年10月 — 2027年7月",
+  "education.period_2": "2020年6月 — 2023年6月",
+  "experience.description_1": "Next.js、TypeScript、FastAPI、PostgreSQLを使用したフルスタックアプリケーションの開発・保守を担当し、暗号通貨決済、SMS、ストリーミング、社内プラットフォームなどのシステム構築に貢献。アジャイルワークフローでの協働を通じて、システムの信頼性向上、テスト基準の確立、SEO/ローカライゼーション効率の改善を推進。",
+  "experience.description_2": "React、TypeScript、FastAPIを使用してレスポンシブアプリケーションを構築・保守し、グローバル状態管理にはReduxを、共同バージョン管理にはGitを活用しました。",
+  "experience.description_3": "React、TypeScript、GraphQLを使用してEウォレット用のWebソフトウェア開発キット（SDK）を開発。APIの実装とプロジェクト構造の簡素化に注力。",
+  "experience.description_4": "レガシーリポジトリの刷新を主導し、読み込み時間を60%改善。Vue.jsとReactを用いた再利用可能なコンポーネントを実装し、本番環境の問題に対する緊急修正を管理。",
+  "experience.period_1": "2024年8月 — 現在",
+  "experience.period_2": "2023年7月 — 2023年12月",
+  "experience.period_3": "2022年11月 — 2023年6月",
+  "experience.period_4": "2024年1月 — 2024年8月",
+  "experience.role_1": "フルスタックエンジニア",
+  "experience.role_2": "ソフトウェアエンジニア",
+  "experience.role_3": "ソフトウェアエンジニアインターン",
+  "footer.rights_reserved": "著作権所有。",
+  "hero.headline_1": "自分の未来を築く",
+  "hero.headline_2": "一歩ずつ進め",
+  "hero.introduction": "こんにちは、ジャックです",
+  "hero.subtitle": "私はフルスタックエンジニアで、スケーラブルで信頼性が高く、構造化されたウェブアプリケーションの構築に注力しています。",
+  "navigation.contact": "連絡",
+  "navigation.education": "教育",
+  "navigation.experience": "経験",
+  "navigation.home": "首頁",
+  "navigation.project": "企画",
+  "navigation.resume": "履歴書",
+  "project.project_1_description": "AIモデルの応答をキャッシュするように設計されたパフォーマンス最適化ツールで、APIの待ち時間と反復クエリの運用コストを大幅に削減します。",
+  "project.project_2_description": "MongoDB、Express、React、Node.jsで構築された包括的なタスク管理プラットフォーム。セキュアな認証、状態管理、完全なCRUD機能を備えています。",
+  "project.project_3_description": "画像認識アルゴリズムを活用し、食品写真を分析してカロリーと主要栄養素の含有量を自動的に推定する、知的な食事管理アプリケーション。",
+  "project.related_project": "関連企画",
+  "project.view_project": "企画を見る"
 }

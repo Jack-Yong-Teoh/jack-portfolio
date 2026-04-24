@@ -1,62 +1,46 @@
 {
-  "contact": {
-    "subtitle": "No dudes en ponerte en contacto conmigo si tienes alguna pregunta, quieres colaborar o simplemente quieres conectar, mi bandeja de entrada siempre está abierta.",
-    "title": "Conectemos"
-  },
-  "education": {
-    "degree_1": "Máster en Ingeniería de Software (Tecnología de Software)",
-    "degree_2": "Licenciatura en Ciencias de la Computación (Ingeniería de Software)",
-    "description_1": "Enfocado en arquitectura limpia, estabilidad operativa y estándares de ingeniería consistentes. Los cursos incluyen Arquitectura de Sistemas de Software y Diseño de Software Basado en Frameworks.",
-    "description_2": "Graduado con un CGPA de 3.60 / 4.00. Galardonado en la lista de honor del Presidente y del Decano. Cursos relevantes: Gestión de Proyectos de Software, Análisis y Diseño de Sistemas, Programación Web, Gestión de Bases de Datos.",
-    "period_1": "Oct 2025 — Jul 2027",
-    "period_2": "Jun 2020 — Jun 2023"
-  },
-  "experience": {
-    "description_1": "Desarrollé y mantuve aplicaciones full-stack utilizando Next.js, TypeScript, FastAPI y PostgreSQL, contribuyendo a sistemas que incluyen pagos criptográficos, SMS, streaming y plataformas internas. Colaboré en flujos de trabajo ágiles mientras mejoraba la fiabilidad del sistema, los estándares de prueba y la eficiencia del SEO/localización.",
-    "description_2": "Desarrollé y mantuve aplicaciones adaptativas utilizando React, TypeScript y FastAPI, utilizando Redux para la gestión global del estado y Git para el control colaborativo de versiones.",
-    "description_3": "Desarrollo de un Kit de Desarrollo de Software Web (SDK) para billeteras electrónicas utilizando React, TypeScript y GraphQL. Centrado en la implementación de API y la simplificación de la estructura del proyecto.",
-    "description_4": "Dirigí la renovación de repositorios heredados, mejorando los tiempos de carga en un 60 %. Implementé componentes reutilizables utilizando Vue.js y React, al tiempo que gestionaba soluciones urgentes para problemas de producción.",
-    "period_1": "Agosto de 2024 — Actualidad",
-    "period_2": "Julio de 2023 — Diciembre de 2023",
-    "period_3": "Nov 2022 — Jun 2023",
-    "period_4": "Enero de 2024 — Agosto de 2024",
-    "role_1": "Ingeniero de software full stack",
-    "role_2": "Ingeniero de software",
-    "role_3": "Pasante de Ingeniería de Software"
-  },
-  "footer": {
-    "rights_reserved": "Todos los derechos reservados."
-  },
-  "hero": {
-    "headline_1": "Construyendo mi futuro,",
-    "headline_2": "Un paso a la vez",
-    "introduction": "Hola, soy Teoh Jack Yong",
-    "subtitle": "Soy un Full-Stack Engineer centrado en la construcción de aplicaciones web escalables, fiables y bien estructuradas."
-  },
-  "chatbot": {
-    "eyebrow": "Asistente IA",
-    "empty_state": "¡Hola! Pregúntame sobre mi experiencia o proyectos.",
-    "input_placeholder": "Escribe tu mensaje…",
-    "send": "Enviar",
-    "close": "Cerrar chat",
-    "open": "Abrir chat",
-    "typing": "El asistente está escribiendo",
-    "error": "Problema de conexión. Por favor, inténtalo de nuevo.",
-    "error_reply": "Lo siento, hubo un problema al responder. Por favor, inténtalo de nuevo."
-  },
-  "navigation": {
-    "contact": "Contacto",
-    "education": "Educación",
-    "experience": "Experiencia",
-    "home": "Inicio",
-    "project": "Proyecto",
-    "resume": "Reanudar"
-  },
-  "project": {
-    "project_1_description": "Una herramienta de optimización del rendimiento diseñada para almacenar en caché las respuestas de los modelos de IA, lo que reduce significativamente la latencia de la API y los costes operativos de las consultas repetitivas.",
-    "project_2_description": "Una plataforma integral de gestión de tareas creada con MongoDB, Express, React y Node.js. Cuenta con autenticación segura, gestión de estado y capacidades CRUD completas.",
-    "project_3_description": "Una aplicación inteligente para el seguimiento de la dieta que utiliza algoritmos de reconocimiento de imágenes para analizar fotos de alimentos y estimar automáticamente el contenido calórico y de macronutrientes.",
-    "related_project": "Proyecto Relacionado",
-    "view_project": "Ver Proyecto"
-  }
+  "chatbot.close": "Cerrar chat",
+  "chatbot.empty_state": "¡Hola! Pregúntame sobre mi experiencia o proyectos.",
+  "chatbot.error": "Problema de conexión. Por favor, inténtalo de nuevo.",
+  "chatbot.error_reply": "Lo siento, hubo un problema al responder. Por favor, inténtalo de nuevo.",
+  "chatbot.eyebrow": "Asistente IA",
+  "chatbot.input_placeholder": "Escribe tu mensaje…",
+  "chatbot.open": "Abrir chat",
+  "chatbot.send": "Enviar",
+  "chatbot.typing": "El asistente está escribiendo",
+  "contact.subtitle": "No dudes en ponerte en contacto conmigo si tienes alguna pregunta, quieres colaborar o simplemente quieres conectar, mi bandeja de entrada siempre está abierta.",
+  "contact.title": "Conectemos",
+  "education.degree_1": "Máster en Ingeniería de Software (Tecnología de Software)",
+  "education.degree_2": "Licenciatura en Ciencias de la Computación (Ingeniería de Software)",
+  "education.description_1": "Enfocado en arquitectura limpia, estabilidad operativa y estándares de ingeniería consistentes. Los cursos incluyen Arquitectura de Sistemas de Software y Diseño de Software Basado en Frameworks.",
+  "education.description_2": "Graduado con un CGPA de 3.60 / 4.00. Galardonado en la lista de honor del Presidente y del Decano. Cursos relevantes: Gestión de Proyectos de Software, Análisis y Diseño de Sistemas, Programación Web, Gestión de Bases de Datos.",
+  "education.period_1": "Oct 2025 — Jul 2027",
+  "education.period_2": "Jun 2020 — Jun 2023",
+  "experience.description_1": "Desarrollé y mantuve aplicaciones full-stack utilizando Next.js, TypeScript, FastAPI y PostgreSQL, contribuyendo a sistemas que incluyen pagos criptográficos, SMS, streaming y plataformas internas. Colaboré en flujos de trabajo ágiles mientras mejoraba la fiabilidad del sistema, los estándares de prueba y la eficiencia del SEO/localización.",
+  "experience.description_2": "Desarrollé y mantuve aplicaciones adaptativas utilizando React, TypeScript y FastAPI, utilizando Redux para la gestión global del estado y Git para el control colaborativo de versiones.",
+  "experience.description_3": "Desarrollo de un Kit de Desarrollo de Software Web (SDK) para billeteras electrónicas utilizando React, TypeScript y GraphQL. Centrado en la implementación de API y la simplificación de la estructura del proyecto.",
+  "experience.description_4": "Dirigí la renovación de repositorios heredados, mejorando los tiempos de carga en un 60 %. Implementé componentes reutilizables utilizando Vue.js y React, al tiempo que gestionaba soluciones urgentes para problemas de producción.",
+  "experience.period_1": "Agosto de 2024 — Actualidad",
+  "experience.period_2": "Julio de 2023 — Diciembre de 2023",
+  "experience.period_3": "Nov 2022 — Jun 2023",
+  "experience.period_4": "Enero de 2024 — Agosto de 2024",
+  "experience.role_1": "Ingeniero de software full stack",
+  "experience.role_2": "Ingeniero de software",
+  "experience.role_3": "Pasante de Ingeniería de Software",
+  "footer.rights_reserved": "Todos los derechos reservados.",
+  "hero.headline_1": "Construyendo mi futuro,",
+  "hero.headline_2": "Un paso a la vez",
+  "hero.introduction": "Hola, soy Teoh Jack Yong",
+  "hero.subtitle": "Soy un Full-Stack Engineer centrado en la construcción de aplicaciones web escalables, fiables y bien estructuradas.",
+  "navigation.contact": "Contacto",
+  "navigation.education": "Educación",
+  "navigation.experience": "Experiencia",
+  "navigation.home": "Inicio",
+  "navigation.project": "Proyecto",
+  "navigation.resume": "Reanudar",
+  "project.project_1_description": "Una herramienta de optimización del rendimiento diseñada para almacenar en caché las respuestas de los modelos de IA, lo que reduce significativamente la latencia de la API y los costes operativos de las consultas repetitivas.",
+  "project.project_2_description": "Una plataforma integral de gestión de tareas creada con MongoDB, Express, React y Node.js. Cuenta con autenticación segura, gestión de estado y capacidades CRUD completas.",
+  "project.project_3_description": "Una aplicación inteligente para el seguimiento de la dieta que utiliza algoritmos de reconocimiento de imágenes para analizar fotos de alimentos y estimar automáticamente el contenido calórico y de macronutrientes.",
+  "project.related_project": "Proyecto Relacionado",
+  "project.view_project": "Ver Proyecto"
 }
