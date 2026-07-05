@@ -5,6 +5,9 @@ import { getLanguage } from "@/tolgee/language";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_BASE_URL || "https://portfolio.jackyong.dev"
+  ),
   title: {
     template: "%s | Teoh Jack Yong",
     default: "Teoh Jack Yong",
