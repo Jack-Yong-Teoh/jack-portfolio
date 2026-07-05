@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import { useTranslate } from "@tolgee/react";
 import IMAGES from "@/assets";
 
+const MAX_MESSAGES = Number(process.env.NEXT_PUBLIC_MAX_MESSAGES) || 10;
 type Message = {
   role: "user" | "assistant" | "system";
   content: string;
@@ -55,8 +56,8 @@ export default function Chatbot() {
 
     const newMessages: Message[] = [
       ...messages,
-      { role: "user", content: trimmedInput },
-    ];
+      { role: "user" as const, content: trimmedInput },
+    ].slice(-MAX_MESSAGES);
 
     setError(null);
     setMessages(newMessages);
@@ -78,7 +79,7 @@ export default function Chatbot() {
       const reply = typeof data.reply === "string" ? data.reply.trim() : "";
 
       if (reply) {
-        setMessages((prev) => [...prev, { role: "assistant", content: reply }]);
+        setMessages((prev) => [...prev, { role: "assistant" as const, content: reply }].slice(-MAX_MESSAGES));
       } else {
         throw new Error("Missing reply from assistant");
       }
@@ -88,10 +89,10 @@ export default function Chatbot() {
       setMessages((prev) => [
         ...prev,
         {
-          role: "assistant",
+          role: "assistant" as const,
           content: t("chatbot.error_reply"),
         },
-      ]);
+      ].slice(-MAX_MESSAGES));
     } finally {
       setIsLoading(false);
     }
